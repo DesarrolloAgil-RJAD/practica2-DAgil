@@ -16,6 +16,8 @@ Práctica 2 Desarrollo Ágil - Aventura Conversacional
     
 > 3. Product Backlog. Imagen
 
+![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/Master/recursos/Kanban_proyecto.PNG?raw=true "Product Backlog") 
+
 > 4. Componentes del equipo
 
     Guijarro Ortega, Rubén - rgo00020
