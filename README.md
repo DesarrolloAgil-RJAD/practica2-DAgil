@@ -1,5 +1,5 @@
 # practica2-DAgil
-Practica 2 Desarrollo Agil - Aventura Conversacional
+Práctica 2 Desarrollo Ágil - Aventura Conversacional
 
   > Índice 
 
@@ -12,6 +12,8 @@ Practica 2 Desarrollo Agil - Aventura Conversacional
 
 > 2. Product Backlog. URL
 
+    https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/projects/2
+    
 > 3. Product Backlog. Imagen
 
 > 4. Componentes del equipo
