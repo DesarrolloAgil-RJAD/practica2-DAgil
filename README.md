@@ -26,7 +26,7 @@ Practica 2 Desarrollo Agil - Morado
     
 > 3. Product Backlog. Imagen
 
-![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/Master/recursos/Kanban_proyecto.PNG?raw=true "Product Backlog") 
+![Product Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/Kanban_proyecto.PNG "Product Backlog") 
 
 > 4. Componentes del equipo
 
