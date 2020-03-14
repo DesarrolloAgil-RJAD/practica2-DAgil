@@ -32,18 +32,17 @@ jQuery.fx.off=true
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation (
-	"<h1>Vuelta a casa</h1>\
-    <p>Volvía de hacer unas compras, pesaban un poco pero no era algo que molestase mucho.  \
-    Llegué a casa y me dispuse a abrir la puerta, pero surgió un problema, no encontraba las llaves.<br/>\
-	Estaba completamente seguro que las había cogido por la mañana.<br/>\
-	Necesitaba entrar, porque es demasiado tarde y es de noche. Supongo que podría <a href='./bolsas' class='once'>buscar en las bolsas de la compra</a>, tambien miré mi móvil, tenía el número de teléfono \
-	del cerrajero para <a href='llamar'>llamarlo</a> o podría ir a casa de la vecina, quizás me puede dejar <a href='balcon'>colarme por el balcón</a>.</p>",
+	"<h1>Un color que no se olvida</h1>\
+    <p>Caminaba con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
+	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
+	</br>\
+	<p class='dialogo'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y es col ten</p> </br>\
+	<p>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
+	varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
+	no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
+	Noté un fuerte dolor en la cabeza, todo se volvió oscuro y morado</p>",
 	  {
-	    actions: {
-                'bolsas': function( character, system, action) {
-					system.setCharacterText( "<p>No las encuentro aquí, no tiene sentido que las guardase con la compra</p>" );
-				}
-	    }   
+	       
 	  }
 	)
 };
