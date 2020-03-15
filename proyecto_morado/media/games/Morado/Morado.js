@@ -40,11 +40,50 @@ undum.game.situations = {
 	<p>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
 	varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
 	no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
-	Noté un fuerte dolor en la cabeza, todo se volvió oscuro y morado</p>",
+	Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'> todo se volvió oscuro y morado</a> </p>\
+	<p><a href='comienzo'>Adéntrate en la historia</a></p>",
 	  {
-	       
+	      actions: {
+                'pensamiento1': function( character, system, action) {
+					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa? ¿Dónde estoy? Tengo la cabeza confusa, parece que me he dado un golpe. Solo sé que no recuerdo nada. </p>" );
+				}
+	    }   
 	  }
+	),
+	
+	comienzo: new undum.SimpleSituation (
+	"<h1>SITIO DESCONOCIDO</h1>\
+	<p>Noto el dolor del brazo, de piernas. Me noto tumbada y me incomoda esa <a href='./lugar'> luz morada </a> que hay en lo alto.\
+	Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aqui.</br>\
+	<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le iba a deber \
+	dinero yo?. Mi cabeza ahora mismo rondaban entre 1 y 100 preguntas y ninguna de ellas sin respuesta.</br> \
+	Me noto inmovilizada, no \
+	puedo mover nada de mi cuerpo; es como si estuviera sufriendo una parálisis del sueño, pero me aseguro que no lo es porque en otras\
+	ocasiones he sufrido algunas. </br>\
+	No se que debo hacer, si <a href='fuerza'>levantarme</a> y arriesgarme al peligro o <a href='miedo'>quedarme dónde estoy </a> sin ninguna explicación. Se que no es facil \
+	mi situación, pero creo que debo encontrar alguna explicación ante todo esto...</br>\
+	¿Y mi hija? Entro en un momento de pánico dónde la situación puede conmigo. No encuentro ninguna explicación\
+	y solo quiero gritar y pedir ayuda.<\p> ",
+	  {
+	      actions: {
+                'lugar': function( character, system, action) {
+					system.setCharacterText( "<p>Comienzo a abrir los ojos despacio, pero con miedo de lo que me pueda \
+					llegar a encontrar. No es habitual amanecer (¡O atardecer!) en un sitio desconocido. </p>" );
+				}
+	    }   
+	  }
+	),
+	
+	fuerza: new undum.SimpleSituation(
+	"<h1>ENCONTRAR RESPUESTAS</h1>"
+	),
+	
+	miedo: new undum.SimpleSituation(
+	"<h1>MIEDO</h1>"
 	)
+	
+	
+	
 };
 
 
