@@ -1,4 +1,4 @@
-# practica2-DAgil
+# Practica2-DAgil
 Practica 2 Desarrollo Agil - Morado
 
   > Índice 
@@ -7,6 +7,8 @@ Practica 2 Desarrollo Agil - Morado
     2. Product Backlog. URL
     3. Product Backlog. Imagen
     4. Componentes del equipo
+    5. Sprint 1
+	
 
 > 1. Descripción del juego
 
@@ -38,4 +40,12 @@ Practica 2 Desarrollo Agil - Morado
 
     Vicente Campos, Alberto - avc00035
 
+> 5. Sprint 1. Historias de Usuario
+    
+    Se han escogido las historias de usuario innegociables de forma que se completen cuanto antes.
+    De esta forma, todo el trabajo posterior tendrá un enfoque de mejora del valor del proyecto.
+    También se ha realizado una valoración aproximada de las horas de trabajo basada en la dificultad
+    estimada de las tareas derivadas de dichas historias de usuario.
 
+    ![Sprint Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/sprint1hu.PNG "Sprint HU")
+    ![Sprint Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbansprint1.PNG "Sprint Backlog")
