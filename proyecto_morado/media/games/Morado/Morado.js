@@ -30,10 +30,11 @@ undum.game.slideUpSpeed = 500
 jQuery.fx.off=true
 
 /* The situations that the game can be in. Each has a unique ID. */
+//caminaba es un enlace de prueba que he usado para saltar rápido a la escena a probar =D
 undum.game.situations = {
     start: new undum.SimpleSituation (
 	"<h1>Un color que no se olvida</h1>\
-    <p>Caminaba con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
+    <p><a href='alucinacion'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
 	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 	</br>\
 	<p class='dialogo'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y es col ten</p> </br>\
@@ -80,9 +81,60 @@ undum.game.situations = {
 	
 	miedo: new undum.SimpleSituation(
 	"<h1>MIEDO</h1>"
-	)
+	),
 	
-	
+	alucinacion: new undum.SimpleSituation (
+	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
+	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
+	</br> </br> &nbsp &nbsp \
+	<a class='once' href='./dos'>¿donde estoy?</a>,\
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp \
+	<a class='once' href='./tres'>¿donde?</a></br> </br> &nbsp &nbsp &nbsp &nbsp\
+	<a class='once' href='./cuatro'>¿que hago?</a> </br> <a class='once' href='./cinco'> ¿quien son?</a></br>\
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
+	<a class='once' href='./seis'>quiero salir</a></br> \
+	<a class='once' href='./siete'>quiero irme a casa</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./ocho'>no quiero esto</a>\
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
+	<a href='./nueve'>quiero volver</a></br> <a class='once' href='./diez'>no quiero que me hagan nada</a></p></br>\
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>Donde esta [nombre de la hija]</a></p>",
+	  {
+	      actions: {
+                'uno': function( character, system, action) {
+					system.setCharacterText("<p>Debo hacer algo</p>");
+				},
+				'dos': function( character, system, action) {
+					system.setCharacterText("<p></p>");
+				},
+				'tres': function( character, system, action) {
+					system.setCharacterText( "<p></p>" );
+				},
+				'cuatro': function( character, system, action) {
+					system.setCharacterText( "<p>No me gusta el ruido</p>" );
+				},
+				'cinco': function( character, system, action) {
+					system.setCharacterText( "<p></p>" );
+				},
+				'seis': function( character, system, action) {
+					system.setCharacterText( "<p></p>" );
+				},
+				'siete': function( character, system, action) {
+					system.setCharacterText( "<p>A mi me gusta el morado</p>" );
+				},
+				'ocho': function( character, system, action) {
+					system.setCharacterText( "<p>¿está?¿donde?</p>" );
+				},
+				'nueve': function( character, system, action) {
+					system.setCharacterText( "<p><a class='once' href='unaescena'>¿La salida?</a></p>" );
+				},
+				'diez': function( character, system, action) {
+					system.setCharacterText( "<p></p>" );
+				},
+				'once': function( character, system, action) {
+					system.setCharacterText( "<p>MI HIJA</br> MI ¡HIJA!</p>" );
+				}
+			}
+	    }   
+	  )
 	
 };
 
