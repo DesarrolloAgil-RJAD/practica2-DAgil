@@ -116,6 +116,7 @@ undum.game.situations = {
 	      actions: {
                 'uno': function( character, system, action) {
 					system.setCharacterText("<p>Debo hacer algo</p>");
+					system.setQuality('puntos', character.qualities.puntos+1 );
 				},
 				'dos': function( character, system, action) {
 					system.setCharacterText("<p></p>");
@@ -171,9 +172,12 @@ undum.game.qualities = {
     antorcha: new undum.OnOffQuality(
         "Antorcha", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
     ),
-	  llave: new undum.OnOffQuality(
+	llave: new undum.OnOffQuality(
         "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
-    )
+    ),
+	puntos: new undum.IntegerQuality(
+		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
+	)
 };
 
 // ---------------------------------------------------------------------------
@@ -183,15 +187,17 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-    inventario: new undum.QualityGroup('Inventario', {priority:"0001"})
+    inventario: new undum.QualityGroup('inventario', {priority:"0002"}),
+	progress: new undum.QualityGroup('', {priority: "0003"})
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    system.setQuality( "antorcha" , false )
-    system.setQuality( "llave" , false )
+    system.setQuality( "antorcha" , false );
+    system.setQuality( "llave" , false );
+	character.qualities.puntos=0;
     system.setCharacterText("<p> </p>");
 };
 
