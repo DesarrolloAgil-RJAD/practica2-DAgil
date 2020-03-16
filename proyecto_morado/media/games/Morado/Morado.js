@@ -37,7 +37,7 @@ undum.game.situations = {
     <p><a href='alucinacion'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
 	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 	</br>\
-	<p class='dialogo'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y es col ten</p> </br>\
+	  </br>\
 	<p>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
 	varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
 	no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
@@ -140,7 +140,7 @@ undum.game.situations = {
 					system.setCharacterText( "<p>¿está?¿donde?</p>" );
 				},
 				'nueve': function( character, system, action) {
-					system.setCharacterText( "<p><a class='once' href='unaescena'>¿La salida?</a></p>" );
+					system.setCharacterText( "<p><a class='once' href='situacion5'>¿La salida?</a></p>" );
 				},
 				'diez': function( character, system, action) {
 					system.setCharacterText( "<p></p>" );
@@ -150,8 +150,27 @@ undum.game.situations = {
 				}
 			}
 	    }   
-	  )
-	
+	  ),
+          
+      situacion5: new undum.SimpleSituation(
+          
+      "<h1>ADELANTE</h1>\
+	   <p> <p class='dialogo'> ¿Cuanto tiempo llevo aquí? Me duele la cabeza...</p> \
+         Parece que has vuelto a desmayarte, este infierno parece no tener fin. Ni si quiera recuerdas cuándo fue la última vez que\
+ te llevaste algo a la boca. Tienes que buscar una salida, aunque encontrar algo de comer puede ser una buena idea. \
+En esta sala hay algunas ventanas rotas, las han tapado. Pero hay rendijas, podrías <a href='situacion52'>mirar al exterior</a>. \
+También hay una puerta doble a tu izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
+A tu derecha, una puerta, por la que se ven unas escaleras. No dispones de mucho tiempo, puede que te estén buscando. \
+Puedes  <a href='situacion53'>salir por esa puerta</a> o quizás deberías volver a subir por esas <a href='situacion6'>escaleras</a></p>"
+          
+    ),
+        
+	situacion52: new undum.SimpleSituation(
+    
+    ),
+    situacion53: new undum.SimpleSituation(
+    )
+
 };
 
 
