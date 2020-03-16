@@ -61,7 +61,7 @@ undum.game.situations = {
 	Desconcertada, me siento en la cama mientras miro a tu alrededor, hay luces moradas en todas las paredes, tan brillantes que \
 	casi ocultan el deterioro de los azulejos. Me siento muy mareada, pero no es momento para descansar, al contrario, aún no sé \
 	si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie me doy cuenta de que mi brazo izquierdo está esposado \
-	a la cama, la cadena parece bastante oxidada, podría <a href=’romper’>intentar romperla</a> de un tirón o <a href=’llave’>buscar la llave</a> por la cama.<\p> ",
+	a la cama, la cadena parece bastante oxidada, podría <a href='romper'>intentar romperla</a> de un tirón o <a href='llave'>buscar la llave</a> por la cama.<\p> ",
 	  {
 	      actions: {
                 'lugar': function( character, system, action) {
@@ -81,21 +81,21 @@ undum.game.situations = {
 	
 	romper: new undum.SimpleSituation(
 	"<h1>TIRÓN</h1> \
-	Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
+	<p>Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
 	y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='puerta'>correr a abrirla</a> o \
 	<a href='habitacion'>mirar la habitación</a> con más detalle.</p>"
 	),
 	
 	puerta: new undum.SimpleSituation(
 	"<h1>PUERTA</h1> \
-	Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
+	<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
 	<a href='buscar'>Volver a mirar por la habitación</a> (ESTO SOLO SALE SI TIENES LA LLAVE PERO NO SÉ CÓMO PONER EL IF) o <a href='SITUACION2'>probar la llave</a> que he encontrado antes.</p>"
 	),
 	
 	buscar: new undum.SimpleSituation(
 	"<h1>BÚSQUEDA</h1> \
-	Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado, \
-	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='SITUACION2'>abrir la puerta</a>.</p>
+	<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
+	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='SITUACION2'>abrir la puerta</a>.</p>"
 	),
 
 	alucinacion: new undum.SimpleSituation (
