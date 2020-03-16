@@ -58,31 +58,46 @@ undum.game.situations = {
 	Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aqui.</br>\
 	<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le iba a deber \
 	dinero yo?. Mi cabeza ahora mismo rondaban entre 1 y 100 preguntas y ninguna de ellas sin respuesta.</br> \
-	Me noto inmovilizada, no \
-	puedo mover nada de mi cuerpo; es como si estuviera sufriendo una parálisis del sueño, pero me aseguro que no lo es porque en otras\
-	ocasiones he sufrido algunas. </br>\
-	No se que debo hacer, si <a href='fuerza'>levantarme</a> y arriesgarme al peligro o <a href='miedo'>quedarme dónde estoy </a> sin ninguna explicación. Se que no es facil \
-	mi situación, pero creo que debo encontrar alguna explicación ante todo esto...</br>\
-	¿Y mi hija? Entro en un momento de pánico dónde la situación puede conmigo. No encuentro ninguna explicación\
-	y solo quiero gritar y pedir ayuda.<\p> ",
+	Desconcertada, me siento en la cama mientras miro a tu alrededor, hay luces moradas en todas las paredes, tan brillantes que \
+	casi ocultan el deterioro de los azulejos. Me siento muy mareada, pero no es momento para descansar, al contrario, aún no sé \
+	si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie me doy cuenta de que mi brazo izquierdo está esposado \
+	a la cama, la cadena parece bastante oxidada, podría <a href=’romper’>intentar romperla</a> de un tirón o <a href=’llave’>buscar la llave</a> por la cama.<\p> ",
 	  {
 	      actions: {
                 'lugar': function( character, system, action) {
-					system.setCharacterText( "<p>Comienzo a abrir los ojos despacio, pero con miedo de lo que me pueda \
+					system.setCharacterText( "<p>Tengo miedo de lo que me pueda \
 					llegar a encontrar. No es habitual amanecer (¡O atardecer!) en un sitio desconocido. </p>" );
 				}
 	    }   
 	  }
 	),
 	
-	fuerza: new undum.SimpleSituation(
-	"<h1>ENCONTRAR RESPUESTAS</h1>"
+	llave: new undum.SimpleSituation(
+	"<h1>BÚSQUEDA</h1>\
+	<p>Con un solo brazo para maniobrar, comienzo a palpar sobre la cama en busca de bultos que puedan ser la llave, sin éxito. \
+	Sigo tanteando con la mano hasta llegar al borde de la cama y dar con una mesita, dentro de la cual hay una llave para mi sorpresa. \
+	La introduzco en las esposas para liberarme, pero no funcionan, tendré que <a href='romper'>intentar romperlas</a>.</p>"
 	),
 	
-	miedo: new undum.SimpleSituation(
-	"<h1>MIEDO</h1>"
+	romper: new undum.SimpleSituation(
+	"<h1>TIRÓN</h1> \
+	Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
+	y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='puerta'>correr a abrirla</a> o \
+	<a href='habitacion'>mirar la habitación</a> con más detalle.</p>"
 	),
 	
+	puerta: new undum.SimpleSituation(
+	"<h1>PUERTA</h1> \
+	Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
+	<a href='buscar'>Volver a mirar por la habitación</a> (ESTO SOLO SALE SI TIENES LA LLAVE PERO NO SÉ CÓMO PONER EL IF) o <a href='SITUACION2'>probar la llave</a> que he encontrado antes.</p>"
+	),
+	
+	buscar: new undum.SimpleSituation(
+	"<h1>BÚSQUEDA</h1> \
+	Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado, \
+	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='SITUACION2'>abrir la puerta</a>.</p>
+	),
+
 	alucinacion: new undum.SimpleSituation (
 	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
