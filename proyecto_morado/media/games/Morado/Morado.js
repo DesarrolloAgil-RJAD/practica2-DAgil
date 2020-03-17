@@ -53,7 +53,7 @@ undum.game.situations = {
 	),
 	
 	comienzo: new undum.SimpleSituation (
-	"<h1>SITIO DESCONOCIDO</h1>\
+	"<h1>UN LUGAR DESCONOCIDO</h1>\
 	<p>Noto el dolor del brazo, de piernas. Me noto tumbada y me incomoda esa <a href='./lugar'> luz morada </a> que hay en lo alto.\
 	Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aqui.</br>\
 	<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le iba a deber \
@@ -73,29 +73,25 @@ undum.game.situations = {
 	),
 	
 	llave: new undum.SimpleSituation(
-	"<h1>BÚSQUEDA</h1>\
-	<p>Con un solo brazo para maniobrar, comienzo a palpar sobre la cama en busca de bultos que puedan ser la llave, sin éxito. \
+	"<p>Con un solo brazo para maniobrar, comienzo a palpar sobre la cama en busca de bultos que puedan ser la llave, sin éxito. \
 	Sigo tanteando con la mano hasta llegar al borde de la cama y dar con una mesita, dentro de la cual hay una llave para mi sorpresa. \
-	La introduzco en las esposas para liberarme, pero no funcionan, tendré que <a href='romper'>intentar romperlas</a>.</p>"
+	La introduzco en las esposas para liberarme, pero no consigue entrar, tendré que <a href='romper'>intentar romperlas</a>.</p>"
 	),
 	
 	romper: new undum.SimpleSituation(
-	"<h1>TIRÓN</h1> \
-	<p>Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
+	"<p>Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
 	y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='puerta'>correr a abrirla</a> o \
-	<a href='habitacion'>mirar la habitación</a> con más detalle.</p>"
+	<a href='buscar'>mirar la habitación</a> con más detalle.</p>"
 	),
 	
 	puerta: new undum.SimpleSituation(
-	"<h1>PUERTA</h1> \
-	<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
-	<a href='buscar'>Volver a mirar por la habitación</a> (ESTO SOLO SALE SI TIENES LA LLAVE PERO NO SÉ CÓMO PONER EL IF) o <a href='SITUACION2'>probar la llave</a> que he encontrado antes.</p>"
+	"<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
+	<a href='buscar'>Volver a mirar por la habitación</a> (ESTO SOLO SALE SI TIENES LA LLAVE PERO NO SÉ CÓMO PONER EL IF) o <a href='situacion2'>probar la llave</a> que he encontrado antes.</p>"
 	),
 	
 	buscar: new undum.SimpleSituation(
-	"<h1>BÚSQUEDA</h1> \
-	<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
-	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='SITUACION2'>abrir la puerta</a>.</p>"
+	"<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
+	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='situacion2'>abrir la puerta</a>.</p>"
 	),
 
 	alucinacion: new undum.SimpleSituation (
@@ -172,10 +168,118 @@ La vegetación es tan frondosa debido al abandono que no puede apreciarse donde 
     ),
     situacion53: new undum.SimpleSituation(
         "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\ Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ </p>"
-    )
+    ),
 
+
+	situacion6: new undum.SimpleSituation(
+	"<h1>ENCUENTRO INESPERADO</h1> \
+	<p>De una vez todo deja de dar vueltas, me cuesta seguir en línea recta pero no dejo de avanzar. Esto no puede seguir así, \
+	debería intentar mantener mi mente ocupada. Quizá <a href='hablar'>hablar en voz alta</a> me ayude a mantener la cordura; o algo \
+	tan simple como <a href='cantar'>tararear una canción</a>, la que sea… (<a href='ignorar'>No hacer nada</a>)</p>"
+	),
+
+	hablar:  new undum.SimpleSituation(
+	"<p>Decido empezar a hablar sobre el futuro, necesito autoconvencerme para no perder la esperanza: \
+	</br>\
+	</br>\
+	-En cuanto encuentre a mi hija, saldremos pitando de aquí juntas, volveremos a nuestra rutina de siempre y recordaremos todo esto \
+	como solo un mal sueño. Sí, -afirmo mientras empiezan a brotar lágrimas de mis ojos- una simple pesadilla. Por favor Thalia, espero que estés sana y sal- \
+	</br>\
+	</br>\
+	-¿M-mami? \
+	</br>\
+	</br>\
+	Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! \
+	Espera, esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
+	),
+
+	cantar: new undum.SimpleSituation(
+	"<p>Sin apenas pensarlo, empiezo a tararear la nana favorita de Thalia, deseando con toda mi alma que se encuentre bien. \
+	</br>\
+	</br>\
+	-La, lará, laralá, la, lalá, lara lalá -comienzan a caer lágrimas por mis mejillas, pero no dejo de tararear- la la, la la lá.. \
+	</br>\
+	</br>\
+	-¿Mami? ¿Mamá? \
+	</br>\
+	</br>\
+	Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! Espera, \
+	esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
+	),
+
+	investigar: new undum.SimpleSituation(
+	"<p>Me acerco en silencio y con cuidado a la puerta cerrada. Se escuchan sollozos de fondo, ¿podrá ser..? \
+	</br>\
+	</br>\
+	-¿T-Thalia? ¿Eres tú? \
+	</br>\
+	</br>\
+	Los sollozos se detienen, a la vez que comienzan a sonar pasitos. Me alejo de la puerta cautelosamente mientras se abre \
+	muy despacio, dejando asomar una pequeña silueta que me mira con recelo. \
+	</br>\
+	</br>\
+	-¿Mamá? ¿De verdad eres mamá? \
+	</br>\
+	</br>\
+	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
+	</br>\
+	</br>\
+	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
+	</br>\
+	</br>\
+	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
+	</br>\
+	</br>\
+	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
+	</br>\
+	</br>\
+	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
+	</br>\
+	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
+	</br>\
+	</br>\
+	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. \
+	</br>\
+	</br>\
+	Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano (no le gusta que la lleve en brazos, \
+	dice que ya es 'una niña muy grande' para eso). Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>"
+	),
+
+	ignorar: new undum.SimpleSituation(
+	"<p>No puede ser real, estoy convencida. No voy a perder tiempo en investigar un ruido que puede ni ser real. Tras avanzar unos cuantos \
+	pasos más, escucho como la puerta que acabo de pasar se abre muy lentamente, y de ella sale una pequeña figura, que empieza a mirar a su alrededor, hasta que me encuentra. \
+	</br>\
+	</br>\
+	-¿Mamá? \
+	</br>\
+	</br>\
+	¡Es ella! ¡Es Thalia! \
+	</br>\
+	</br>\
+	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
+	</br>\
+	</br>\
+	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
+	</br>\
+	</br>\
+	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
+	</br>\
+	</br>\
+	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
+	</br>\
+	</br>\
+	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
+	</br>\
+	</br>\
+	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
+	</br>\
+	</br>\
+	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. \
+	</br>\
+	</br>\
+	Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>"
+	)
 };
-
 
 // Ejemplo de declaraciÃ³n separada
 undum.game.situations["calabozo"]=new undum.SimpleSituation(
