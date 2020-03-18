@@ -46,7 +46,7 @@ undum.game.situations = {
 	  {
 	      actions: {
                 'pensamiento1': function( character, system, action) {
-					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='comienzo'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. Solo sé que no recuerdo nada. </p>" );
+					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='comienzo' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. Solo sé que no recuerdo nada. </p>" );
 				}
 	    }   
 	  }
@@ -121,11 +121,11 @@ comienzo: new undum.SimpleSituation (
 	preguntas que me planteo a cada minuto. Ni un rastro y prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
 	No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
 	¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
-	No sé si deberia estar andando <a href='./rapido' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>"
+	No sé si deberia estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>"
 	,{
 		actions: {
 			'rapido': function( character, system, action) {
-					system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21'>despacio</a> </p>");
+					system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
 					system.setQuality('puntos', character.qualities.puntos+100 );
 			}
 			
@@ -143,14 +143,14 @@ comienzo: new undum.SimpleSituation (
 	
 	situacion22: new undum.SimpleSituation(
 	"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
-	Ahora sí que tengo miedo. Totalmente es una <a href='./carta'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
+	Ahora sí que tengo miedo. Totalmente es una <a href='./carta' class='once'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
 	todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
 	</p>",
         {
 		actions: {
 			'carta': function( character, system, action) {
 					system.setQuality('carta',1);
-					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion4'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion4' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 			}
 			
 		}
@@ -183,7 +183,7 @@ comienzo: new undum.SimpleSituation (
 	      actions: {
                 'uno': function( character, system, action) {
 					system.setCharacterText("<p>Debo hacer algo</p>");
-					system.setQuality('puntos', character.qualities.puntos+1 );
+					system.setQuality('puntos', character.qualities.puntos+100 );
 					system.setQuality('llave',1);
 				},
 				'dos': function( character, system, action) {
@@ -231,22 +231,42 @@ comienzo: new undum.SimpleSituation (
 	En esta sala hay algunas ventanas rotas, las han tapado con tablas. Pero hay rendijas, podría <a href='situacion52'>mirar al exterior</a>. \
 	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
 	<p>A la derecha, otra puerta, por la que se ven unas escaleras. No dispongo de mucho tiempo, puede que me estén buscando. \
-	<a href='situacion53'>Saldré por esa puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a></p>"
+	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
           
     ),
         
 	situacion52: new undum.SimpleSituation(
     "<p>El sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
-	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente</p>"
+	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
+    </br>\ <a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
     ),
 	
     situacion53: new undum.SimpleSituation(
-    "<p> Con cierta ansiedad, me dispongo a empujar la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \
-	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>\ Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior. Voy a <a href='COLECCIONABLE'>ver qué hay ahi dentro</a> o mejor no tocar nada, tengo que darme prisa.</p>\
+    "</br>\<p>Con cierta ansiedad, me dispongo a empujar la puerta:\
+    <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
+	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior. Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
      </p>"
+        
     ),
-
+    
+    situacion54: new undum.SimpleSituation(
+        "<p>Me acerco a la enorme montaña de hojas y comienzo a rebuscar. Es una silla vieja, no tiene mucho \interés..un momento, ¿Qué es <a href='./colgante' class='once'>esto</a>?</p>",
+        {
+            actions: {
+                    'colgante': 
+                            function( character, system, action) {
+                            system.setQuality('colgante',1);	
+                            system.setQuality('puntos', character.qualities.puntos+100 );
+                            system.setCharacterText( "<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás. 'A.D.R. Hab. 213.' Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
+                          
+                }
+            }
+        }
+    ),
+    situacion55: new undum.SimpleSituation(
+    "<p>En el patio hay 3 puertas más, todas están cerradas, no tengo más remedio que <a href='situacion6' class='once'>volver por las escaleras</a></p>"
+    ),
 
 	situacion6: new undum.SimpleSituation(
 	"<h1>ENCUENTRO INESPERADO</h1> \
@@ -290,6 +310,7 @@ comienzo: new undum.SimpleSituation (
 	{
 	    enter: function(character,system,to){
 			system.setQuality('hija',1);	
+        
 	    }   
 	  }
 	),
@@ -385,16 +406,16 @@ undum.game.qualities = {
         "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
     barra: new undum.OnOffQuality(
-        "Barra de metal", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+        "Barra de metal", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
     carta: new undum.OnOffQuality(
-        "Carta antigua", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+        "Carta antigua", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
     colgante: new undum.OnOffQuality(
-        "Colgante", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+        "Colgante", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
     navaja: new undum.OnOffQuality(
-        "Navaja de afeitar", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+        "Navaja de afeitar", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
