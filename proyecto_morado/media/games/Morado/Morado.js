@@ -231,7 +231,7 @@ undum.game.situations = {
 	
     situacion53: new undum.SimpleSituation(
     "<p> Con cierta ansiedad, me dispongo a empujar la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \
-	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>\
+	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>\ Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior. Voy a <a href='COLECCIONABLE'>ver qué hay ahi dentro</a> o mejor no tocar nada, tengo que darme prisa.</p>\
      </p>"
     ),
 
@@ -300,7 +300,9 @@ undum.game.situations = {
 			system.setQuality('hija',1);	
 	    }   
 	  }
-	)
+	),
+    
+   
 };
 
 // Ejemplo de declaraciÃ³n separada
