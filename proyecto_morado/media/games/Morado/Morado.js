@@ -344,7 +344,7 @@ comienzo: new undum.SimpleSituation (
     
     situacion71: new undum.SimpleSituation(
     "<p class='transient'>Abro la puerta en silencio. Tal y como pensaba, solo hay una cama desvencijada y un escuálido escritorio bajo una ventana tapiada.\
-<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
+    <p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
     ),
     
     situacion712: new undum.SimpleSituation(
