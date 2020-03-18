@@ -34,7 +34,7 @@ jQuery.fx.off=true
 undum.game.situations = {
     start: new undum.SimpleSituation (
 	"<h1>Un color que no se olvida</h1>\
-    <p><a href='alucinacion'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
+    <p><a href='situacion4'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
 	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 	</br>\
 	<p class='dialogo'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten</p>\
@@ -113,7 +113,7 @@ undum.game.situations = {
 	  }),
 
 
-	alucinacion: new undum.SimpleSituation (
+	situacion4: new undum.SimpleSituation (
 	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
