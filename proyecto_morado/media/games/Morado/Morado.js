@@ -300,6 +300,7 @@ undum.game.situations = {
 			system.setQuality('hija',1);	
 	    }   
 	  }
+	 
 	),
     
     situacion7: new undum.SimpleSituation(
@@ -338,7 +339,16 @@ undum.game.situations = {
     "<p><p class='dialogo'>Por fin.<a href='situacion72'>Aquí</a> está. </p></p>"
     ),
     situacion72: new undum.SimpleSituation(
-    "<p>Una cama rota. Sí. Con esa (BARRA DE METAL) podremos forzar la puerta. </p>"
+    "<p>Una cama rota. Sí. Con esa <a href='./barra' >barra de metal</a> podremos forzar la puerta y <a href='situacion8'>salir de aquí</a>. </p>",
+        {
+		actions: {
+			'barra': function( character, system, action) {
+					system.setQuality('barra',1);		
+			}
+			
+		}
+    }
+    
     ),
 };
 
@@ -361,6 +371,9 @@ undum.game.qualities = {
     ),
 	llave: new undum.OnOffQuality(
         "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+    ),
+    barra: new undum.OnOffQuality(
+        "Barra de metal", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
