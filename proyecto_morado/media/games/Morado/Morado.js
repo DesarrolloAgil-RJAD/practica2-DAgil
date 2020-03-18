@@ -329,7 +329,7 @@ undum.game.situations = {
     "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion716'>miramos al otro lado</a>?</p></p>"
     ),
     situacion717: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion717'>miramos al otro lado</a>?</p></p>"
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
     ),
     situacion718: new undum.SimpleSituation(
     "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
