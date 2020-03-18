@@ -302,7 +302,44 @@ undum.game.situations = {
 	  }
 	),
     
-   
+    situacion7: new undum.SimpleSituation(
+    "<h1>HACIA LA SALIDA</h1> \<p>Unas luces moradas parpadeantes iluminan todo un pasillo lleno de puertas. Parece que son habitaciones. Al final del pasillo hay una de esas puertas con un cartel verde. No entiendo cómo la gente puede orientarse en estos lugares.\ <p class='dialogo'>Vamos a jugar a un juego Thalia, vamos a ir abriendo puertas y tú vas contando cuántas llevamos abiertas, ¿si?</p>\
+    No se ha dado cuenta, pero la puerta está con una cadena, no podemos salir por ahí si no encuentro con qué romperla...\
+<p class='dialogo'> ¿Por qué lado quieres empezar Thalia? ¿<a href='situacion71'>izquierda</a> o <a href='situacion71'>derecha</a> ?</p>"
+    ),
+    
+    situacion71: new undum.SimpleSituation(
+    "<p>Abro la puerta en silencio. Tal y como pensaba, solo hay una cama desvencijada y un escuálido escritorio bajo una ventana tapiada.\
+<p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
+    ),
+    
+    situacion712: new undum.SimpleSituation(
+    "<p>Me dirijo a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion713'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion713: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion714'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion713'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion714: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion715'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion715: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion716: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion716'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion717: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion717'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion718: new undum.SimpleSituation(
+    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
+    ),
+    situacion719: new undum.SimpleSituation(
+    "<p><p class='dialogo'>Por fin.<a href='situacion72'>Aquí</a> está. </p></p>"
+    ),
+    situacion72: new undum.SimpleSituation(
+    "<p>Una cama rota. Sí. Con esa (BARRA DE METAL) podremos forzar la puerta. </p>"
+    ),
 };
 
 // Ejemplo de declaraciÃ³n separada
