@@ -79,26 +79,44 @@ undum.game.situations = {
 	),
 	
 	romper: new undum.SimpleSituation(
+
 	"<p>Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
 	y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='puerta'>correr a abrirla</a> o \
 	<a href='buscar'>mirar la habitación</a> con más detalle.</p>"
 	),
 	
 	puerta: new undum.SimpleSituation(
-	"<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
-	<a href='buscar'>Volver a mirar por la habitación</a> (ESTO SOLO SALE SI TIENES LA LLAVE PERO NO SÉ CÓMO PONER EL IF) o <a href='situacion2'>probar la llave</a> que he encontrado antes.</p>"
+	""
+	,{
+	    enter: function(character,system,to){
+			if(character.qualities.llave==1){
+				system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
+	<a href='buscar'>Volver a mirar por la habitación</a> o <a href='SITUACION2'>probar la llave</a> que he encontrado antes. </p>" );
+			system.setQuality('llave',0);	
+			}else{
+				system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
+	<a href='buscar'>Volver a mirar por la habitación</a></p>" );	
+			}
+	    }   
+	  }
 	),
 	
 	buscar: new undum.SimpleSituation(
-	"<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
-	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='situacion2'>abrir la puerta</a>.</p>"
-	),
+	"\
+	<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
+	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='puerta'>abrir la puerta</a>.</p>"
+	,{
+	    enter: function(character,system,to){
+			system.setQuality('llave',1);	
+	    }   
+	  }),
+
 
 	alucinacion: new undum.SimpleSituation (
 	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
-	<a class='once' href='./dos'>¿donde estoy?</a>,\
+	<a class='once' href='./dos'>¿donde estoy?</a>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp \
 	<a class='once' href='./tres'>¿donde?</a></br> </br> &nbsp &nbsp &nbsp &nbsp\
 	<a class='once' href='./cuatro'>¿que hago?</a> </br> <a class='once' href='./cinco'> ¿quien son?</a></br>\
@@ -113,9 +131,11 @@ undum.game.situations = {
                 'uno': function( character, system, action) {
 					system.setCharacterText("<p>Debo hacer algo</p>");
 					system.setQuality('puntos', character.qualities.puntos+1 );
+					system.setQuality('llave',1);
 				},
 				'dos': function( character, system, action) {
 					system.setCharacterText("<p></p>");
+					system.setQuality('llave',0);
 				},
 				'tres': function( character, system, action) {
 					system.setCharacterText( "<p></p>" );
@@ -295,8 +315,8 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    antorcha: new undum.OnOffQuality(
-        "Antorcha", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    hija: new undum.OnOffQuality(
+        "Hija rescatada", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
     ),
 	llave: new undum.OnOffQuality(
         "Llave", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
@@ -304,6 +324,7 @@ undum.game.qualities = {
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
 	)
+	
 };
 
 // ---------------------------------------------------------------------------
@@ -313,15 +334,15 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-    inventario: new undum.QualityGroup('inventario', {priority:"0002"}),
-	progress: new undum.QualityGroup('', {priority: "0003"})
+    inventario: new undum.QualityGroup('Inventario', {priority:"0002"}),
+	progress: new undum.QualityGroup('&nbsp', {priority: "0003"})
 };
 
 // ---------------------------------------------------------------------------
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    system.setQuality( "antorcha" , false );
+    system.setQuality( "hija" , false );
     system.setQuality( "llave" , false );
 	character.qualities.puntos=0;
     system.setCharacterText("<p> </p>");
