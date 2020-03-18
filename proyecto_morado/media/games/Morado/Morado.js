@@ -113,7 +113,7 @@ undum.game.situations = {
 	    }   
 	  }),
 
-<<<<<<< HEAD
+
 	
 	situacion2: new undum.SimpleSituation(
 	"<h1>EL PASILLO INFINITO</h1>\
@@ -153,10 +153,9 @@ undum.game.situations = {
 	),
 	
 	alucinacion: new undum.SimpleSituation (
-=======
+
 
 	situacion4: new undum.SimpleSituation (
->>>>>>> origin/develop
 	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
@@ -233,13 +232,10 @@ undum.game.situations = {
     ),
 	
     situacion53: new undum.SimpleSituation(
-<<<<<<< HEAD
     "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \  Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ </p>"
-=======
     "<p> Con cierta ansiedad de dispones a abrir la puerta</p>\
 	<p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
 	<p>Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>"
->>>>>>> origin/develop
     ),
 
 
