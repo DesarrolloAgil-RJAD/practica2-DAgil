@@ -200,69 +200,36 @@ undum.game.situations = {
 	),
 
 	hablar:  new undum.SimpleSituation(
-	"<p>Decido empezar a hablar sobre el futuro, necesito autoconvencerme para no perder la esperanza: \
-	</br>\
-	</br>\
-	-En cuanto encuentre a mi hija, saldremos pitando de aquí juntas, volveremos a nuestra rutina de siempre y recordaremos todo esto \
+	"<p>Decido empezar a hablar sobre el futuro, necesito autoconvencerme para no perder la esperanza: </p>\
+	<p class='dialogo'>-En cuanto encuentre a mi hija, saldremos pitando de aquí juntas, volveremos a nuestra rutina de siempre y recordaremos todo esto \
 	como solo un mal sueño. Sí, -afirmo mientras empiezan a brotar lágrimas de mis ojos- una simple pesadilla. Por favor Thalia, espero que estés sana y sal- \
-	</br>\
-	</br>\
-	-¿M-mami? \
-	</br>\
-	</br>\
-	Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! \
+	-¿M-mami? </p>\
+	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! \
 	Espera, esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
 	),
 
 	cantar: new undum.SimpleSituation(
-	"<p>Sin apenas pensarlo, empiezo a tararear la nana favorita de Thalia, deseando con toda mi alma que se encuentre bien. \
-	</br>\
-	</br>\
-	-La, lará, laralá, la, lalá, lara lalá -comienzan a caer lágrimas por mis mejillas, pero no dejo de tararear- la la, la la lá.. \
-	</br>\
-	</br>\
-	-¿Mami? ¿Mamá? \
-	</br>\
-	</br>\
-	Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! Espera, \
+	"<p>Sin apenas pensarlo, empiezo a tararear la nana favorita de Thalia, deseando con toda mi alma que se encuentre bien.</p> \
+	<p class='dialogo'>-La, lará, laralá, la, lalá, lara lalá -comienzan a caer lágrimas por mis mejillas, pero no dejo de tararear- la la, la la lá.. \
+	-¿Mami? ¿Mamá? </p>\
+	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! Espera, \
 	esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
 	),
 
 	investigar: new undum.SimpleSituation(
-	"<p>Me acerco en silencio y con cuidado a la puerta cerrada. Se escuchan sollozos de fondo, ¿podrá ser..? \
-	</br>\
-	</br>\
-	-¿T-Thalia? ¿Eres tú? \
-	</br>\
-	</br>\
-	Los sollozos se detienen, a la vez que comienzan a sonar pasitos. Me alejo de la puerta cautelosamente mientras se abre \
-	muy despacio, dejando asomar una pequeña silueta que me mira con recelo. \
-	</br>\
-	</br>\
-	-¿Mamá? ¿De verdad eres mamá? \
-	</br>\
-	</br>\
+	"<p>Me acerco en silencio y con cuidado a la puerta cerrada. Se escuchan sollozos de fondo, ¿podrá ser..?</p> \
+	<p class='dialogo'>-¿T-Thalia? ¿Eres tú? </p>\
+	<p>Los sollozos se detienen, a la vez que comienzan a sonar pasitos. Me alejo de la puerta cautelosamente mientras se abre \
+	muy despacio, dejando asomar una pequeña silueta que me mira con recelo. </p>\
+	<p class='dialogo'>-¿Mamá? ¿De verdad eres mamá? \
 	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
-	</br>\
-	</br>\
 	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
-	</br>\
-	</br>\
 	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
-	</br>\
-	</br>\
 	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
-	</br>\
-	</br>\
 	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
-	</br>\
 	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
-	</br>\
-	</br>\
-	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. \
-	</br>\
-	</br>\
-	Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano (no le gusta que la lleve en brazos, \
+	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
+	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano (no le gusta que la lleve en brazos, \
 	dice que ya es 'una niña muy grande' para eso). Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
 	{
 	    enter: function(character,system,to){
@@ -273,37 +240,17 @@ undum.game.situations = {
 
 	ignorar: new undum.SimpleSituation(
 	"<p>No puede ser real, estoy convencida. No voy a perder tiempo en investigar un ruido que puede ni ser real. Tras avanzar unos cuantos \
-	pasos más, escucho como la puerta que acabo de pasar se abre muy lentamente, y de ella sale una pequeña figura, que empieza a mirar a su alrededor, hasta que me encuentra. \
-	</br>\
-	</br>\
-	-¿Mamá? \
-	</br>\
-	</br>\
-	¡Es ella! ¡Es Thalia! \
-	</br>\
-	</br>\
-	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
-	</br>\
-	</br>\
+	pasos más, escucho como la puerta que acabo de pasar se abre muy lentamente, y de ella sale una pequeña figura, que empieza a mirar a su alrededor, hasta que me encuentra.</p>\
+	<p class='dialogo'>-¿Mamá? </p>\
+	<p>¡Es ella! ¡Es Thalia! </p>\
+	<p class='dialogo'>-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
 	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
-	</br>\
-	</br>\
 	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
-	</br>\
-	</br>\
 	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
-	</br>\
-	</br>\
 	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
-	</br>\
-	</br>\
 	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
-	</br>\
-	</br>\
-	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. \
-	</br>\
-	</br>\
-	Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
+	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
+	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
 	{
 	    enter: function(character,system,to){
 			system.setQuality('hija',1);	
