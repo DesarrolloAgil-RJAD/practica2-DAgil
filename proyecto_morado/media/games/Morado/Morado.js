@@ -239,26 +239,26 @@ comienzo: new undum.SimpleSituation (
     "<p>El sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
 	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
-    </br>\ <a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
+    </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
     ),
 	
     situacion53: new undum.SimpleSituation(
     "</br>\<p>Con cierta ansiedad, me dispongo a empujar la puerta:\
     <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
-	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior. Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
+	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
      </p>"
         
     ),
     
     situacion54: new undum.SimpleSituation(
-        "<p>Me acerco a la enorme montaña de hojas y comienzo a rebuscar. Es una silla vieja, no tiene mucho \interés..un momento, ¿Qué es <a href='./colgante' class='once'>esto</a>?</p>",
+        "<p>Me acerco a la enorme montaña de hojas y comienzo a rebuscar. Es una silla vieja, no tiene mucho \interés...</br> Un momento...\ </br><p>¿Qué es <a href='./colgante' class='once'>esto</a>?</p>",
         {
             actions: {
                     'colgante': 
                             function( character, system, action) {
                             system.setQuality('colgante',1);	
                             system.setQuality('puntos', character.qualities.puntos+100 );
-                            system.setCharacterText( "<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás. 'A.D.R. Hab. 213.' Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
+                            system.setCharacterText( "<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás:</br> 'A.D.R. Hab. 213.' </br> Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
                           
                 }
             }
@@ -357,13 +357,24 @@ comienzo: new undum.SimpleSituation (
     "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion715'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion713'>miramos al otro lado</a>?</p></p>"
     ),
     situacion715: new undum.SimpleSituation(
-    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es igual que la otra, no cambia nada.\ <p class='dialogo transient'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Me adentro en la siguiente habitación. Abro la puerta de un golpe. Es igual que la otra, no cambia nada.\ <p class='dialogo transient'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
     ),
     situacion716: new undum.SimpleSituation(
-    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Me lanzo a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
     ),
     situacion717: new undum.SimpleSituation(
-    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo transient'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Abro la puerta siguiente puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='./navaja' class='once'>algo </a>encima del escritorio.\ <p class='dialogo transient'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>",
+        {
+            actions: {
+                    'navaja': 
+                            function( character, system, action) {
+                            system.setQuality('navaja',1);	
+                            system.setQuality('puntos', character.qualities.puntos+100 );
+                            system.setCharacterText( "<p> Parece ser una navaja vieja, aunque no está demasiado oxidada, la guardaré por si me es útil</p>" );
+                          
+                }
+            }
+        }
     ),
     situacion718: new undum.SimpleSituation(
     "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo transient'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion719'>miramos al otro lado</a>?</p></p>" 
@@ -372,7 +383,7 @@ comienzo: new undum.SimpleSituation (
     "<p><p class='dialogo'>Por fin.<a href='situacion72'>Aquí</a> está. </p></p>"
     ),
     situacion72: new undum.SimpleSituation(
-    "<p>Una cama rota. Sí. Con esa <a href='./barra' >barra de metal</a> podremos forzar la puerta y <a href='situacion8'>salir de aquí</a>. </p>",
+    "<p>Una cama rota. Sí. Con esa <a href='./barra' class='once'>barra de metal</a> podremos forzar la puerta y <a href='situacion8'>salir de aquí</a>. </p>",
         {
 		actions: {
 			'barra': function( character, system, action) {
@@ -383,6 +394,7 @@ comienzo: new undum.SimpleSituation (
     }
     
     ),
+        
 };
 
 // Ejemplo de declaraciÃ³n separada
@@ -415,7 +427,7 @@ undum.game.qualities = {
         "Colgante", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
     navaja: new undum.OnOffQuality(
-        "Navaja de afeitar", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+        "Navaja", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
