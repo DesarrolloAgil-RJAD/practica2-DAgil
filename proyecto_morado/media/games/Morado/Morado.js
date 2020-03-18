@@ -92,7 +92,7 @@ undum.game.situations = {
 	    enter: function(character,system,to){
 			if(character.qualities.llave==1){
 				system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
-	<a href='buscar'>Volver a mirar por la habitación</a> o <a href='SITUACION2'>probar la llave</a> que he encontrado antes. </p>" );
+	<a href='buscar'>Volver a mirar por la habitación</a> o <a href='situacion2'>probar la llave</a> que he encontrado antes. </p>" );
 			system.setQuality('llave',0);	
 			}else{
 				system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
@@ -105,14 +105,52 @@ undum.game.situations = {
 	buscar: new undum.SimpleSituation(
 	"\
 	<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
-	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='puerta'>abrir la puerta</a>.</p>"
+	me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='situacion2'>abrir la puerta</a>. Pero me quedo con \
+	la esperanza de encontrar algo más en la habitación... Algo que me sirva como luz en este camino morado que me está poniendo la vida como prueba.</p>"
 	,{
 	    enter: function(character,system,to){
 			system.setQuality('llave',1);	
 	    }   
 	  }),
 
-
+	
+	situacion2: new undum.SimpleSituation(
+	"<h1>EL PASILLO INFINITO</h1>\
+	<p>El escalofrio que recorre mi piel es signo de miedo, desolación, desconcertancia... Aún no encuentro respuestas a las tantas\
+	preguntas que me planteo a cada minuto. Ni un rastro y prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
+	No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
+	¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
+	No sé si deberia estar andando <a href='./rapido' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>"
+	,{
+		actions: {
+			'rapido': function( character, system, action) {
+					system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21'>despacio</a> </p>");
+					system.setQuality('puntos', character.qualities.puntos+100 );
+			}
+			
+		}
+	}
+	),
+	
+	situacion21: new undum.SimpleSituation(
+	"<p>Andar despacio no me está ayudando... pero creo que debo andarme con cuidado por lo que pueda pasar. </br>\
+	Mi entorno se comprende entre luces moradas, papeles sanitarios tirados por el suelo y maquinaria totalmente destrozada. Esto tiene\
+	pinta de un hospital. Me agacho con cautrela para mirar de qué tratan estos <a href='situacion22'>documentos</a> e intentar entender algo. Pero nada... No encuentro \
+	Ningún tipo de información relevante que pueda ser de ayuda en este caso, además no entiendo la jerga sanitaria y todo lo relacionado con ella \
+	cuando yo realmente me dedico al tema empresarial de marketing. </p>"
+	),
+	
+	situacion22: new undum.SimpleSituation(
+	"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
+	Ahora sí que tengo miedo. Totalmente es una <a href='situacion3'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
+	todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
+	</p>"
+	),
+	
+	situacion3: new undum.SimpleSituation(
+	
+	),
+	
 	alucinacion: new undum.SimpleSituation (
 	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
@@ -188,7 +226,7 @@ undum.game.situations = {
 	La vegetación es tan frondosa debido al abandono que no puede apreciarse donde acaba un árbol y empieza el siguiente/</p>"
     ),
     situacion53: new undum.SimpleSituation(
-    "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\ Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ </p>"
+    "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \  Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ </p>"
     ),
 
 
