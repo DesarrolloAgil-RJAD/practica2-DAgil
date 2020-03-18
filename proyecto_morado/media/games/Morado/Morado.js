@@ -214,24 +214,24 @@ undum.game.situations = {
     "<h1>ADELANTE</h1>\
 	<p></p>\
 	<p class='dialogo'> ¿Cuanto tiempo llevo aquí? Me duele la cabeza...</p> \
-    <p>Parece que has vuelto a desmayarte, este infierno parece no tener fin. Ni si quiera recuerdas cuándo fue la última vez que\
-	te llevaste algo a la boca. Tienes que buscar una salida, aunque encontrar algo de comer puede ser una buena idea. \
-	En esta sala hay algunas ventanas rotas, las han tapado. Pero hay rendijas, podrías <a href='situacion52'>mirar al exterior</a>. \
-	También hay una puerta doble a tu izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
-	<p>A tu derecha, una puerta, por la que se ven unas escaleras. No dispones de mucho tiempo, puede que te estén buscando. \
-	Puedes  <a href='situacion53'>salir por esa puerta</a> o quizás deberías volver a subir por esas <a href='situacion6'>escaleras</a></p>"
+    <p>Parece que he vuelto a desmayarme, este infierno parece no tener fin. Ni si quiera recuerdo cuándo fue la última vez que\
+	me llevé algo de comida a la boca. Tengo que buscar una salida, aunque encontrar un poco de sustento puede ser una buena idea. \
+	En esta sala hay algunas ventanas rotas, las han tapado con tablas. Pero hay rendijas, podría <a href='situacion52'>mirar al exterior</a>. \
+	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
+	<p>A la derecha, otra puerta, por la que se ven unas escaleras. No dispongo de mucho tiempo, puede que me estén buscando. \
+	<a href='situacion53'>Saldré por esa puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a></p>"
           
     ),
         
 	situacion52: new undum.SimpleSituation(
-    "<p>El sol te ciega por un momento y cuando vislumbras lo que te rodea solo  ves ventanas, también cerradas,\
-	asomadas a un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
-	La vegetación es tan frondosa debido al abandono que no puede apreciarse donde acaba un árbol y empieza el siguiente</p>"
+    "<p>El sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
+	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
+	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente</p>"
     ),
 	
     situacion53: new undum.SimpleSituation(
-    "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \
-	Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>\
+    "<p> Con cierta ansiedad, me dispongo a empujar la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p> \
+	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>\
      </p>"
     ),
 
