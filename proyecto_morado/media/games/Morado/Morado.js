@@ -33,27 +33,27 @@ jQuery.fx.off=true
 //caminaba es un enlace de prueba que he usado para saltar rápido a la escena a probar =D
 undum.game.situations = {
     start: new undum.SimpleSituation (
-	"<h1>Un color que no se olvida</h1>\
-    <p><a href='situacion4'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
+	"<h1 class='transient'>Un color que no se olvida</h1>\
+    <p class='transient'><a href='situacion4'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
 	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 	</br>\
-	<p class='dialogo'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten</p>\
+	<p class='dialogo transient'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten</p>\
 	</br>\
-	<p>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
+	<p class='transient'>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
 	varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
 	no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
-	Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'> todo se volvió oscuro y morado</a> </p>\
-	<p><a href='comienzo'>Adéntrate en la historia</a></p>",
+	Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'> todo se volvió oscuro y morado</a> </p>",
 	  {
 	      actions: {
                 'pensamiento1': function( character, system, action) {
-					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa? ¿Dónde estoy? Tengo la cabeza confusa, parece que me he dado un golpe. Solo sé que no recuerdo nada. </p>" );
+					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='comienzo'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. Solo sé que no recuerdo nada. </p>" );
 				}
 	    }   
 	  }
 	),
 	
-	comienzo: new undum.SimpleSituation (
+	
+comienzo: new undum.SimpleSituation (
 	"<h1>UN LUGAR DESCONOCIDO</h1>\
 	<p>Noto el dolor del brazo, de piernas. Me noto tumbada y me incomoda esa <a href='./lugar'> luz morada </a> que hay en lo alto.\
 	Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aqui.</br>\
@@ -154,7 +154,7 @@ undum.game.situations = {
 	
 
 	situacion4: new undum.SimpleSituation (
-	"<p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
+	"<div class='transient'><p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
 	<a class='once' href='./dos'>¿donde estoy?</a>\
@@ -166,7 +166,7 @@ undum.game.situations = {
 	<a class='once' href='./siete'>quiero irme a casa</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./ocho'>no quiero esto</a>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
 	<a href='./nueve'>quiero volver</a></br> <a class='once' href='./diez'>no quiero que me hagan nada</a></p></br>\
-	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>¿Donde esta Thalia?</a></p>",
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>¿Donde esta Thalia?</a></p></div>",
 	  {
 	      actions: {
                 'uno': function( character, system, action) {
@@ -310,30 +310,30 @@ undum.game.situations = {
     ),
     
     situacion71: new undum.SimpleSituation(
-    "<p>Abro la puerta en silencio. Tal y como pensaba, solo hay una cama desvencijada y un escuálido escritorio bajo una ventana tapiada.\
-<p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Abro la puerta en silencio. Tal y como pensaba, solo hay una cama desvencijada y un escuálido escritorio bajo una ventana tapiada.\
+<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
     ),
     
     situacion712: new undum.SimpleSituation(
-    "<p>Me dirijo a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion713'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Me dirijo a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion713'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
     ),
     situacion713: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion714'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion713'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Voy a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion714'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
     ),
     situacion714: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Bueno, lo hemos intentado, deberíamos <a href='situacion715'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion715'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion713'>miramos al otro lado</a>?</p></p>"
     ),
     situacion715: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es igual que la otra, no cambia nada.\ <p class='dialogo transient'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
     ),
     situacion716: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion716'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\ <p class='dialogo transient'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
     ),
     situacion717: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='COLECCIONABLE'>algo </a>encima del escritorio.\ <p class='dialogo transient'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
     ),
     situacion718: new undum.SimpleSituation(
-    "<p>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion718'>miramos al otro lado</a>?</p></p>"
+    "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo transient'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion719'>miramos al otro lado</a>?</p></p>" 
     ),
     situacion719: new undum.SimpleSituation(
     "<p><p class='dialogo'>Por fin.<a href='situacion72'>Aquí</a> está. </p></p>"
