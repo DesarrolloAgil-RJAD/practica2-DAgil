@@ -34,7 +34,7 @@ jQuery.fx.off=true
 undum.game.situations = {
     start: new undum.SimpleSituation (
 	"<h1 class='transient'>Un color que no se olvida</h1>\
-    <p class='transient'><a href='situacion4'>Caminaba</a> con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
+    <p class='transient'>Caminaba con mi pequeña hija de vuelta a casa y decidimos tomar un pequeño atajo,\
 	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 	</br>\
 	<p class='dialogo transient'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten</p>\
@@ -143,9 +143,19 @@ comienzo: new undum.SimpleSituation (
 	
 	situacion22: new undum.SimpleSituation(
 	"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
-	Ahora sí que tengo miedo. Totalmente es una <a href='situacion3'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
+	Ahora sí que tengo miedo. Totalmente es una <a href='./carta'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
 	todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
-	</p>"
+	</p>",
+        {
+		actions: {
+			'carta': function( character, system, action) {
+					system.setQuality('carta',1);
+					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion4'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+			}
+			
+		}
+        
+}
 	),
 	
 	situacion3: new undum.SimpleSituation(
@@ -154,7 +164,9 @@ comienzo: new undum.SimpleSituation (
 	
 
 	situacion4: new undum.SimpleSituation (
-	"<div class='transient'><p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
+	"<div class='transient'>\</br> \
+    <h1>LA 213</h1>\
+    <p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
 	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
 	<a class='once' href='./dos'>¿donde estoy?</a>\
@@ -374,6 +386,15 @@ undum.game.qualities = {
     ),
     barra: new undum.OnOffQuality(
         "Barra de metal", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    ),
+    carta: new undum.OnOffQuality(
+        "Carta antigua", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    ),
+    colgante: new undum.OnOffQuality(
+        "Colgante", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
+    ),
+    navaja: new undum.OnOffQuality(
+        "Navaja de afeitar", {priority:"0001", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
