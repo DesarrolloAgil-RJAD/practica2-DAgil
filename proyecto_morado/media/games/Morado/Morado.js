@@ -172,8 +172,9 @@ undum.game.situations = {
     situacion5: new undum.SimpleSituation(
           
     "<h1>ADELANTE</h1>\
-	<p> <p class='dialogo'> ¿Cuanto tiempo llevo aquí? Me duele la cabeza...</p> \
-    Parece que has vuelto a desmayarte, este infierno parece no tener fin. Ni si quiera recuerdas cuándo fue la última vez que\
+	<p></p>\
+	<p class='dialogo'> ¿Cuanto tiempo llevo aquí? Me duele la cabeza...</p> \
+    <p>Parece que has vuelto a desmayarte, este infierno parece no tener fin. Ni si quiera recuerdas cuándo fue la última vez que\
 	te llevaste algo a la boca. Tienes que buscar una salida, aunque encontrar algo de comer puede ser una buena idea. \
 	En esta sala hay algunas ventanas rotas, las han tapado. Pero hay rendijas, podrías <a href='situacion52'>mirar al exterior</a>. \
 	También hay una puerta doble a tu izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
@@ -185,10 +186,13 @@ undum.game.situations = {
 	situacion52: new undum.SimpleSituation(
     "<p>El sol te ciega por un momento y cuando vislumbras lo que te rodea solo  ves ventanas, también cerradas,\
 	asomadas a un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
-	La vegetación es tan frondosa debido al abandono que no puede apreciarse donde acaba un árbol y empieza el siguiente/</p>"
+	La vegetación es tan frondosa debido al abandono que no puede apreciarse donde acaba un árbol y empieza el siguiente</p>"
     ),
+	
     situacion53: new undum.SimpleSituation(
-    "<p> Con cierta ansiedad de dispones a abrir la puerta\ <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\ Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\ </p>"
+    "<p> Con cierta ansiedad de dispones a abrir la puerta</p>\
+	<p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
+	<p>Al abrir la puerta el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa. </p>"
     ),
 
 
