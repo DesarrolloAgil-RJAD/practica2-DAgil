@@ -73,11 +73,18 @@ Practica 2 Desarrollo Agil - Morado
     
 > 5.2 Sprint 1. Sprint Retrospective.
 
-    Además, se ha realizado un informe mediante Google Sheets para una mejor organización. Se ha utilizado:
+    Análisis del Sprint:
+    
+    	Personas:
+	Relaciones:
+	Procesos:
+	Herramientas:
 	
-	- Distribución visual del trabajo mediante gráficos
-	- Registro del trabajo diario del equipo
- 	- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
-        - Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
+	    Se ha realizado un informe mediante Google Sheets para una mejor organización. Se ha utilizado:
 
-    ![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.PNG "Sprint Retrospective")
+		- Distribución visual del trabajo mediante gráficos
+		- Registro del trabajo diario del equipo
+		- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
+		- Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
+
+    		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.PNG "Sprint Retrospective")
