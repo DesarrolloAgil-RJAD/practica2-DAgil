@@ -182,13 +182,21 @@ comienzo: new undum.SimpleSituation (
 			},
 			'nota': function (character, system, action){
 					system.setQuality('Nota',1);
-					system.setCharacterText("<p>Esta nota está metida en un sobre...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
+					system.setCharacterText("<p>Esta nota está metida en un <a href='situacion31'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
 			}
 		}
 	}
 	),
 	
+	situacion31: new undum.SimpleSituation(
+	"<p>No sé si me da más miedo no abrirlo o ver qué pone... </br>\
+	Está claro que es necesario que lo lea porque todo esto esconde un misterio que tengo derecho a saber por qué. Me dispongo a <a href='situacion32'>abrir el sobre</a></p>"
+	),
 	
+	situacion32: new undum.SimpleSituation(
+	
+	
+	),
 	
 
 	situacion4: new undum.SimpleSituation (
