@@ -57,9 +57,21 @@ Practica 2 Desarrollo Agil - Morado
     
 > 5.1 Sprint 1. Sprint Review.
 
+    ¿Qué se ha hecho en este Sprint?
+    
     ![Sprint Planning](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/tareas.PNG "Sprint Planning")
-
-> 5.2 Sprint 1. Srpint Retrospective.
+    Estimaciones y revisión del Product Backlog. Revisión de plazos.
+    
+    Equipo. Qué ha ido bien.Problemas y soluciones.
+    
+    Demostración del incremento. (pantallazo del juego aquí)
+    
+    Orientación del siguiente Sprint. Maximizar valor del Producto.
+    
+    
+    
+    
+> 5.2 Sprint 1. Sprint Retrospective.
 
     Además, se ha realizado un informe mediante Google Sheets para una mejor organización. Se ha utilizado:
 	
