@@ -160,12 +160,12 @@ comienzo: new undum.SimpleSituation (
 		actions: {
 			'carta': function( character, system, action) {
 					system.setQuality('carta',1);
-					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 			}
 			
 		}
         
-}
+		}
 	),
 	
 	situacion3: new undum.SimpleSituation(
@@ -174,14 +174,14 @@ comienzo: new undum.SimpleSituation (
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
 	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quien sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
-	Paso por el pasillo y encuentro una <a href='./botella'>botella</a> de agua en el suelo, junto a esta botella hay escrita una nota. </p>"
+	Paso por el pasillo y encuentro una <a href='./botella'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota'>nota</a>. </p>",
 	{
 		actions: {
 			'botella': function(character, system, action){
-					system.setQuality('Botella de agua',1);
+					system.setQuality('botella',1);
 			},
 			'nota': function (character, system, action){
-					system.setQuality('Nota',1);
+					system.setQuality('nota',1);
 					system.setCharacterText("<p>Esta nota está metida en un <a href='situacion31'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
 			}
 		}
@@ -196,9 +196,16 @@ comienzo: new undum.SimpleSituation (
 	situacion32: new undum.SimpleSituation(
 	"<p class = 'dialogo'>Esto no es un aviso. Es una obligación que debes de cumplir si quieres ver a tu hija alguna vez en tu vida. \
 	No se cuando leeras esto, pero tarde o temprano tendrás desesperación, sufrirás alucinaciones y desmayos. El tiempo corre y sobretodo tú, corre\
-	todo lo que puedas hasta encontrar esa habitación. El tiempo corre... Tú decides, el destino está en tus manos.</p>"
+	todo lo que puedas hasta encontrar esa habitación. El tiempo corre... Tú decides, el destino está en tus manos.</p> </br>\
+	<p>No, no puede ser verdad, ¿TIENE A MI HIJA? ¿LA TIENE SECUESTRADA? pero,¡¡¡¡¡por qué!!!!! qué he hecho para <a href='situacion33'>sufrir</a> todo esto</p>"
 	),
 	
+	situacion33: new undum.SimpleSituation(
+	"<p>¿Se referirá a la habitacion 213? ¿Por qué esa habitación exactamente? Tengo que buscarla como sea. Pero no sé todo esto no me cuadra mucho\
+	¿No es mucha casualidad que justamente sea esta habitación? ¿Qué esconderá esa tal habitación? ¿Será una habitación de la tortura? \
+	No me queda otra en ir en busca de esta habitación. Tengo que coger fuerzas e ir a rescatar a mi hija, que es lo único que importa ahora mismo. </br>\
+	Nada ni nadie me podrá parar hasta ir a por mi hija. Cojo el coraje que llevo dentro, me levanto de un impulso y me dirijo a la <a href='situacion4'>habitación 213</a>.</p>"
+	),
 
 	situacion4: new undum.SimpleSituation (
 	"<div class='transient'>\</br> \
@@ -471,6 +478,14 @@ undum.game.qualities = {
     barra: new undum.OnOffQuality(
         "Barra de metal", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
+	
+	botella: new undum.OnOffQuality(
+		"Botella de agua", {priority: "0002", group:'inventario', onDisplay:"&#10003;"}
+	),
+	nota: new undum.OnOffQuality(
+		"Nota", {priority: "0002", group:'inventario', onDisplay:"&#10003;"}
+	),
+	
     carta: new undum.OnOffQuality(
         "Carta antigua", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
