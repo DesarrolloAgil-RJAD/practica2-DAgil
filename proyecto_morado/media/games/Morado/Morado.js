@@ -160,7 +160,7 @@ comienzo: new undum.SimpleSituation (
 		actions: {
 			'carta': function( character, system, action) {
 					system.setQuality('carta',1);
-					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion4' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 			}
 			
 		}
@@ -169,7 +169,12 @@ comienzo: new undum.SimpleSituation (
 	),
 	
 	situacion3: new undum.SimpleSituation(
-	
+	"<h1>EL RECORRIDO</h1>\
+	<p>Todas las habitaciones me parecen iguales, algunas no tienen ni número y otras son números sin sentido... No sé si estos numeros significarán algo o serán imaginaciones mías\
+	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
+	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quien sabe, puede ser que esté hasta en el extranjero.\
+	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
+	Paso por el pasillo y encuentro una botella de agua en el suelo, junto a esta botella hay escrita una nota. </p>"
 	),
 	
 
