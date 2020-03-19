@@ -460,7 +460,7 @@ comienzo: new undum.SimpleSituation (
     
     ),
 	
-	situacion8: new undum.SimpleSituacion(
+	situacion8: new undum.SimpleSituation(
 	"<h1>UN NUEVO COMIENZO</h1>\
 	<p>Empujo con la barra de metal que hemos cogido hasta abrir la puerta, aunque con cautela puesto no queremos forzar y romper la barra de metal antes que la puerta\
 	Comienza a abrirse la puerta, pero aún falta un poco más. Con ayuda de mi hija y yo podremos salir de aqui. </br>\
@@ -473,12 +473,12 @@ comienzo: new undum.SimpleSituation (
 	),
     
 
-	situacion81: new undum.SimpleSituacion(
+	situacion81: new undum.SimpleSituation(
 	"<p>En la nota pone lo siguiente</p>\
 	<p class='dialogo'>Nunca pude llegar a creer que saldrías de aquí, y menos con tu hija. Te veo muy pronto. Puede que sea una amenanza... O no. Soy quien menos te lo \
 	esperas. Ahora empieza a valorar lo que es la vida y más con tu hija.</p>\
 	<p>Una rabia creció dentro de mí que hizo que derramase una lágrima en mi rostro. Creo que solo me quedan fuerzas para correr con mi hija y dejar todo el pasado atrás.</p></br>\
-	<p class='dialogo'>Te quiero Thalia, nunca te separes de mí.</p> </br>\
+	<p class='dialogo'>-Te quiero Thalia, nunca te separes de mí.</p> </br>\
 	<h1>FIN</h1>"
 	),
 };
