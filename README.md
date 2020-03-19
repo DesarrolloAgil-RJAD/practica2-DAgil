@@ -82,7 +82,7 @@ Practica 2 Desarrollo Agil - Morado
 	
     Demostración del incremento. 
     
-   ![Product Review](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/productreview.PNG?raw=true "Product Review")
+   ![Product Review](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/productreview.PNG?raw=true "Product Review")
     
     Orientación del siguiente Sprint. Maximizar valor del Producto.
     	
@@ -104,7 +104,7 @@ Practica 2 Desarrollo Agil - Morado
 		- Daily Scrum, con muy buen resultado
 		- Scrum Review, Scrum Retrospective
 		
-![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/scrumreview.PNG?raw=true "Reunión")
+![Sprint Retrospective](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/scrumreview.PNG?raw=true "Reunión")
 		
 	Herramientas:
 		- Desarrollo: SmartGit, NotePad++, Bloc de Notas, Brackets
