@@ -47,13 +47,13 @@ Practica 2 Desarrollo Agil - Morado
     También se ha realizado una valoración aproximada de las horas de trabajo basada en la dificultad
     estimada de las tareas derivadas de dichas historias de usuario.
 
-    ![Sprint HU](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/sprint1hu.PNG?raw=true "Sprint HU")
-    ![Sprint Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbansprint1.PNG?raw=true "Sprint Backlog")
+   ![Sprint HU](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/Kanban_proyecto.PNG "Sprint HU")
+   ![Sprint Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbansprint1.PNG?raw=true "Sprint Backlog")
 
     En el Product Backlog Refinement no se ha realizado cambios en las tareas, ya que eran adecuadas.
     A continuación se presenta el aspecto y destancan los cambios tras el Product Backlog Refinement:
     
-    ![PBR](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbanPBR.PNG?raw=true "Product Backlog Refinement")
+   ![PBR](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbanPBR.png?raw=true "Product Backlog Refinement")
     
 > 5.1 Sprint 1. Sprint Review.
 
@@ -67,7 +67,7 @@ Practica 2 Desarrollo Agil - Morado
 	    https://moradouja.000webhostapp.com/
 
 	    Aquí se presenta el Sprint Planning
-	    ![Sprint Planning](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/tareas.PNG?raw=true "Sprint Planning")
+  ![Sprint Planning](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/tareas.JPG?raw=true "Sprint Planning")
 
     Estimaciones y revisión del Product Backlog. Revisión de plazos.
 
@@ -82,7 +82,7 @@ Practica 2 Desarrollo Agil - Morado
 	
     Demostración del incremento. 
     
-    ![Product Review](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/productreview.PNG?raw=true "Product Review")
+   ![Product Review](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/productreview.PNG?raw=true "Product Review")
     
     Orientación del siguiente Sprint. Maximizar valor del Producto.
     	
@@ -104,7 +104,7 @@ Practica 2 Desarrollo Agil - Morado
 		- Daily Scrum, con muy buen resultado
 		- Scrum Review, Scrum Retrospective
 		
-		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/scrumreview.PNG?raw=true "Reunión")
+![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/scrumreview.PNG?raw=true "Reunión")
 		
 	Herramientas:
 		- Desarrollo: SmartGit, NotePad++, Bloc de Notas, Brackets
@@ -118,7 +118,7 @@ Practica 2 Desarrollo Agil - Morado
 		- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
 		- Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
     
-    		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.PNG?raw=true "Sprint Retrospective")
+   ![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.JPG?raw=true "Sprint Retrospective")
 		
 	Cosas a mejorar:
 		- Mejor utilización del tablero Kanban para la organización de tareas
