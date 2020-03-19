@@ -126,7 +126,8 @@ comienzo: new undum.SimpleSituation (
 		actions: {
 			'rapido': function( character, system, action) {
 					system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
-					system.setQuality('puntos', character.qualities.puntos+100 );
+					system.setQuality('puntos', character.qualities.puntos+1 );
+
 			}
 			
 		}
@@ -183,12 +184,11 @@ comienzo: new undum.SimpleSituation (
 	      actions: {
                 'uno': function( character, system, action) {
 					system.setCharacterText("<p>Debo hacer algo</p>");
-					system.setQuality('puntos', character.qualities.puntos+100 );
-					system.setQuality('llave',1);
+					system.setQuality('puntos', character.qualities.puntos+1 );
+
 				},
 				'dos': function( character, system, action) {
 					system.setCharacterText("<p></p>");
-					system.setQuality('llave',0);
 				},
 				'tres': function( character, system, action) {
 					system.setCharacterText( "<p></p>" );
@@ -376,6 +376,7 @@ comienzo: new undum.SimpleSituation (
             }
         }
     ),
+
     situacion718: new undum.SimpleSituation(
     "<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\ <p class='dialogo transient'>Démonos prisa, <a href='situacion719'>mirar la siguiente habitación</a>,\ ¿ o <a href='situacion719'>miramos al otro lado</a>?</p></p>" 
     ),
@@ -452,6 +453,7 @@ undum.game.qualityGroups = {
 undum.game.init = function(character, system) {
     system.setQuality( "hija" , false );
     system.setQuality( "llave" , false );
+	system.setQuality( "barra" , false );
 	character.qualities.puntos=0;
     system.setCharacterText("<p> </p>");
 };
