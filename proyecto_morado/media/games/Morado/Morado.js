@@ -160,7 +160,8 @@ comienzo: new undum.SimpleSituation (
 		actions: {
 			'carta': function( character, system, action) {
 					system.setQuality('carta',1);
-					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...' No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
+					No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 			}
 			
 		}
@@ -174,7 +175,7 @@ comienzo: new undum.SimpleSituation (
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
 	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quien sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
-	Paso por el pasillo y encuentro una <a href='./botella'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota'>nota</a>. </p>",
+	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota' class='once'>nota</a>. </p>",
 	{
 		actions: {
 			'botella': function(character, system, action){
@@ -182,7 +183,7 @@ comienzo: new undum.SimpleSituation (
 			},
 			'nota': function (character, system, action){
 					system.setQuality('nota',1);
-					system.setCharacterText("<p>Esta nota está metida en un <a href='situacion31'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
+					system.setCharacterText("<p>Esta nota está metida en un <a href='situacion31' class='once'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
 			}
 		}
 	}
@@ -191,7 +192,13 @@ comienzo: new undum.SimpleSituation (
 	situacion31: new undum.SimpleSituation(
 	"<p>No sé si me da más miedo no abrirlo o ver qué pone... </br>\
 	Está claro que es necesario que lo lea porque todo esto esconde un misterio que tengo derecho a saber por qué. Me dispongo a <a href='situacion32'>abrir el sobre</a></p>"
-	),
+	,
+	{
+		enter: function(character,system,to){
+			system.setCharacterText("");	
+	    } 
+		
+	}),
 	
 	situacion32: new undum.SimpleSituation(
 	"<p class = 'dialogo'>Esto no es un aviso. Es una obligación que debes de cumplir si quieres ver a tu hija alguna vez en tu vida. \
@@ -424,7 +431,7 @@ comienzo: new undum.SimpleSituation (
                     'navaja': 
                             function( character, system, action) {
                             system.setQuality('navaja',1);	
-                            system.setQuality('puntos', character.qualities.puntos+100 );
+                            system.setQuality('puntos', character.qualities.puntos+1 );
                             system.setCharacterText( "<p> Parece ser una navaja vieja, aunque no está demasiado oxidada, la guardaré por si me es útil</p>" );
                           
                 }
