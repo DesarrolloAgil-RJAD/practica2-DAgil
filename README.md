@@ -68,4 +68,4 @@ Practica 2 Desarrollo Agil - Morado
  	- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
         - Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
 
-    ![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/tareas.PNG "Sprint Planning")
+    ![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.PNG "Sprint Retrospective")
