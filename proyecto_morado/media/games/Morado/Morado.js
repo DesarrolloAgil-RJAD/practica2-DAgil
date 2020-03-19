@@ -194,8 +194,9 @@ comienzo: new undum.SimpleSituation (
 	),
 	
 	situacion32: new undum.SimpleSituation(
-	
-	
+	"<p class = 'dialogo'>Esto no es un aviso. Es una obligación que debes de cumplir si quieres ver a tu hija alguna vez en tu vida. \
+	No se cuando leeras esto, pero tarde o temprano tendrás desesperación, sufrirás alucinaciones y desmayos. El tiempo corre y sobretodo tú, corre\
+	todo lo que puedas hasta encontrar esa habitación. El tiempo corre... Tú decides, el destino está en tus manos.</p>"
 	),
 	
 
