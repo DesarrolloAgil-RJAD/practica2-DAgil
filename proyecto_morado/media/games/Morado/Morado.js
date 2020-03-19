@@ -174,8 +174,21 @@ comienzo: new undum.SimpleSituation (
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
 	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quien sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
-	Paso por el pasillo y encuentro una botella de agua en el suelo, junto a esta botella hay escrita una nota. </p>"
+	Paso por el pasillo y encuentro una <a href='./botella'>botella</a> de agua en el suelo, junto a esta botella hay escrita una nota. </p>"
+	{
+		actions: {
+			'botella': function(character, system, action){
+					system.setQuality('Botella de agua',1);
+			},
+			'nota': function (character, system, action){
+					system.setQuality('Nota',1);
+					system.setCharacterText("<p>Esta nota está metida en un sobre...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
+			}
+		}
+	}
 	),
+	
+	
 	
 
 	situacion4: new undum.SimpleSituation (
