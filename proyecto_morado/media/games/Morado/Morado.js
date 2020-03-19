@@ -27,7 +27,7 @@ undum.game.fadeSpeed = 1500
 undum.game.slideUpSpeed = 500
 
 // En modo depuraciÃ³n, que no haya efectos de jquery
-jQuery.fx.off=true
+jQuery.fx.off=false
 
 /* The situations that the game can be in. Each has a unique ID. */
 //caminaba es un enlace de prueba que he usado para saltar rápido a la escena a probar =D
