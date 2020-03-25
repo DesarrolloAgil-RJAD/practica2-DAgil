@@ -32,86 +32,86 @@ jQuery.fx.off=false
 /* The situations that the game can be in. Each has a unique ID. */
 //caminaba es un enlace de prueba que he usado para saltar rápido a la escena a probar =D
 undum.game.situations = {
+	
     start: new undum.SimpleSituation (
-	"<h1 class='transient'>Un color que no se olvida</h1>\
-    <p class='transient'>Caminaba con mi hija pequeña de vuelta a casa y decidimos tomar un pequeño atajo,\
-	una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
-	</br>\
-	<p class='dialogo transient'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten.</p>\
-	</br>\
-	<p class='transient'>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
-	varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
-	no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
-	Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'>todo se volvió oscuro y morado</a> </p>",
-	  {
-	      actions: {
-                'pensamiento1': function( character, system, action) {
-					system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='comienzo' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
-				}
-	    }   
-	  }
+		"<h1 class='transient'>Un color que no se olvida</h1>\
+		<p class='transient'>Caminaba con mi hija pequeña de vuelta a casa y decidimos tomar un pequeño atajo,\
+		una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
+		</br>\
+		<p class='dialogo transient'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten.</p>\
+		</br>\
+		<p class='transient'>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
+		varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
+		no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
+		Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'>todo se volvió oscuro y morado</a> </p>",
+		{
+			actions: {
+					'pensamiento1': function( character, system, action) {
+						system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+					}
+			}   
+		}
 	),
 	
 	
-	comienzo: new undum.SimpleSituation (
+	situacion1: new undum.SimpleSituation (
 		"<h1>UN LUGAR DESCONOCIDO</h1>\
-		<p>Noto el dolor del brazo, de piernas. Me noto tumbada y me incomoda esa <a href='./lugar' class='once'> luz morada </a> que hay en lo alto.\
-		Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aqui.</br>\
-		<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le iba a deber \
+		<p>Noto un dolor en el brazo, y en las piernas. Me noto tumbada y me incomoda esa <a href='./lugar' class='once'> luz morada </a> que hay en lo alto.\
+		Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aquí.</br>\
+		<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le debo \
 		dinero yo?. Mi cabeza ahora mismo rondaban entre 1 y 100 preguntas y ninguna de ellas sin respuesta.</br> \
-		Desconcertada, me siento en la cama mientras miro a tu alrededor, hay luces moradas en todas las paredes, tan brillantes que \
+		Desconcertada, me siento en la cama mientras intento mirar a mi alrededor, hay luces moradas en todas las paredes, tan brillantes que \
 		casi ocultan el deterioro de los azulejos. Me siento muy mareada, pero no es momento para descansar, al contrario, aún no sé \
-		si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie me doy cuenta de que mi brazo izquierdo está esposado \
-		a la cama, la cadena parece bastante oxidada, podría <a href='romper'>intentar romperla</a> de un tirón o <a href='llave'>buscar la llave</a> por la cama.<\p> ",
+		si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie, me doy cuenta de que mi brazo izquierdo está esposado \
+		a la cama, la cadena parece bastante oxidada, podría <a href='situacion12'>intentar romperla</a> de un tirón o <a href='situacion11'>buscar la llave</a> si por suerte está en la cama.<\p> ",
 		{
-			  actions: {
+			actions: {
 					'lugar': function( character, system, action) {
 						system.setCharacterText( "<p>Tengo miedo de lo que me pueda \
 						llegar a encontrar. No es habitual amanecer (¡O atardecer!) en un sitio desconocido. </p>" );
 						system.setQuality('puntos', character.qualities.puntos+1 );
 					}
-			  }   
+			}   
 		}
 	),
 		
-	llave: new undum.SimpleSituation(
+	situacion11: new undum.SimpleSituation(
 		"<p>Con un solo brazo para maniobrar, comienzo a palpar sobre la cama en busca de bultos que puedan ser la llave, sin éxito. \
-		Sigo tanteando con la mano hasta llegar al borde de la cama y dar con una mesita, dentro de la cual hay una llave para mi sorpresa. \
-		La introduzco en las esposas para liberarme, pero no consigue entrar, tendré que <a href='romper'>intentar romperlas</a>.</p>"
-		),
+		Sigo tanteando con la mano hasta llegar al borde de la cama y dar con una mesita, dentro de la cual hay una llave, ¡Sorpresa!. \
+		La introduzco en las esposas para liberarme, pero no consigue entrar, será la llave de otra cosa. Tendré que <a href='situacion12'>intentar romperlas</a>.</p>"
+	),
 		
-	romper: new undum.SimpleSituation(
-
+	situacion12: new undum.SimpleSituation(
 		"<p>Hago acopio de las pocas fuerzas que me quedan y estiro con las dos manos de la cadena, consiguiendo partir un eslabón \
-		y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='puerta'>correr a abrirla</a> o \
-		<a href='buscar'>mirar la habitación</a> con más detalle.</p>"
-		),
+		y separarme de la cama. Una vez en pie, consigo distinguir lo que parece ser la puerta de la habitación. Puedo <a href='situacion13'>correr a abrirla</a> o \
+		<a href='situacion14'>mirar la habitación</a> con más detalle.</p>"
+	),
 		
-	puerta: new undum.SimpleSituation(
-		""
-		,{
+	situacion13: new undum.SimpleSituation(
+		"",
+		{
 			enter: function(character,system,to){
 				if(character.qualities.llave==1){
 					system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
-		<a href='buscar'>Volver a mirar por la habitación</a> o <a href='situacion2'>probar la llave</a> que he encontrado antes. </p>" );	
+									<a href='situacion14'>Volver a mirar por la habitación</a> o <a href='situacion2'>probar la llave</a> que he encontrado antes. </p>" );	
 				}else{
 					system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
-		<a href='buscar'>Volver a mirar por la habitación</a></p>" );	
+									<a href='situacion14'>Volver a mirar por la habitación</a></p>" );	
 				}
 			}   
-		  }
-		),
+		}
+	),
 		
-		buscar: new undum.SimpleSituation(
-		"\
-		<p>Como al despertar pero con más cuidado, miro a mi alrededor. Aparte de la cama vieja, distingo una mesita al lado,\
-		me acerco y encuentro una llave en su interior, puede ser la que necesito para <a href='situacion2'>abrir la puerta</a>. Pero me quedo con \
-		la esperanza de encontrar algo más en la habitación... Algo que me sirva como luz en este camino morado que me está poniendo la vida como prueba.</p>"
-		,{
+	situacion14: new undum.SimpleSituation(
+		"<p>Cuando despierto, miro a mi alrederor pero con mucho cuidado. Aparte de la cama vieja, distingo una mesita al lado,\
+		me acerco y encuentro una llave en su interior, puede ser la que necesite para <a href='situacion2'>abrir la puerta</a>. Pero me quedo con \
+		la esperanza de encontrar algo más en la habitación... Algo que me sirva como luz en este camino morado que me está poniendo la vida como prueba.</p>",
+		{
 			enter: function(character,system,to){
 				system.setQuality('llave',1);	
 			}   
-		  }),
+		}
+	),
 
 
 	
