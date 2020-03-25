@@ -53,7 +53,6 @@ undum.game.situations = {
 		}
 	),
 	
-	
 	situacion1: new undum.SimpleSituation (
 		"<h1>UN LUGAR DESCONOCIDO</h1>\
 		<p>Noto un dolor en el brazo, y en las piernas. Me noto tumbada y me incomoda esa <a href='./lugar' class='once'> luz morada </a> que hay en lo alto.\
@@ -113,58 +112,54 @@ undum.game.situations = {
 		}
 	),
 
-
-	
 	situacion2: new undum.SimpleSituation(
-	"<h1>EL PASILLO INFINITO</h1>\
-	<p>El escalofrio que recorre mi piel es signo de miedo, desolación, desconcertancia... Aún no encuentro respuestas a las tantas\
-	preguntas que me planteo a cada minuto. Ni un rastro y prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
-	No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
-	¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
-	No sé si deberia estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>"
-	,{
-		enter: function(character,system,to){
-			system.setQuality('llave',0);	
-	    }, 
-		actions: {
-			'rapido': function( character, system, action) {
-					system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
-					system.setQuality('puntos', character.qualities.puntos+1 );
+		"<h1>EL PASILLO INFINITO</h1>\
+		<p>El escalofrio que recorre mi piel es signo de miedo, desolación, desconcertancia... Aún no encuentro respuestas a las tantas\
+		preguntas que me planteo a cada minuto. Ni un rastro y prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
+		No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
+		¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
+		No sé si deberia estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>",
+		{
+			enter: function(character,system,to){
+				system.setQuality('llave',0);	
+			}, 
+			actions: {
+				'rapido': function( character, system, action) {
+						system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
+						system.setQuality('puntos', character.qualities.puntos+1 );
 
+				}
+				
 			}
-			
 		}
-	}
 	),
 	
 	situacion21: new undum.SimpleSituation(
-	"<p>Andar despacio no me está ayudando... pero creo que debo andarme con cuidado por lo que pueda pasar. </br>\
-	Mi entorno se comprende entre luces moradas, papeles sanitarios tirados por el suelo y maquinaria totalmente destrozada. Esto tiene\
-	pinta de un hospital. Me agacho con cautrela para mirar de qué tratan estos <a href='situacion22'>documentos</a> e intentar entender algo. Pero nada... No encuentro \
-	Ningún tipo de información relevante que pueda ser de ayuda en este caso, además no entiendo la jerga sanitaria y todo lo relacionado con ella \
-	cuando yo realmente me dedico al tema empresarial de marketing. </p>",
-	{
-		enter: function(character,system,to){
-			system.setCharacterText("");	
-	    } 
-		
-	}
+		"<p>Andar despacio no me está ayudando... pero creo que debo andarme con cuidado por lo que pueda pasar. </br>\
+		Mi entorno se comprende entre luces moradas, papeles sanitarios tirados por el suelo y maquinaria totalmente destrozada. Esto tiene\
+		pinta de un hospital. Me agacho con cautela para mirar de qué tratan estos <a href='situacion22'>documentos</a> e intentar entender algo. Pero nada... No encuentro \
+		Ningún tipo de información relevante que pueda ser de ayuda en este caso, además no entiendo la jerga sanitaria y todo lo relacionado con ella \
+		cuando yo realmente me dedico al tema empresarial de marketing. </p>",
+		{
+			enter: function(character,system,to){
+				system.setCharacterText("");	
+			} 
+		}
 	),
 	
 	situacion22: new undum.SimpleSituation(
-	"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
-	Ahora sí que tengo miedo. Totalmente es una <a href='./carta' class='once'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
-	todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
-	</p>",
+		"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
+		Ahora sí que tengo miedo. Totalmente es una <a href='./carta' class='once'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
+		todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
+		</p>",
         {
-		actions: {
-			'carta': function( character, system, action) {
-					system.setQuality('carta',1);
-					system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
-					No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+			actions: {
+				'carta': function( character, system, action) {
+						system.setQuality('carta',1);
+						system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
+						No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+				}
 			}
-			
-		}
         
 		}
 	),
