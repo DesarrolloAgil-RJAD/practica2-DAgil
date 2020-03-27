@@ -38,16 +38,16 @@ undum.game.situations = {
 		<p class='transient'>Caminaba con mi hija pequeña de vuelta a casa y decidimos tomar un pequeño atajo,\
 		una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
 		</br>\
-		<p class='dialogo transient'> ¿Que hace una chica tan bonita como tu en un lugar como este?, será mejor que unos caballeros te guíen y escolten.</p>\
+		<p class='dialogo transient'> ¿Qué hace una chica tan bonita como tú en un lugar como este? Será mejor que unos caballeros te guíen y escolten.</p>\
 		</br>\
-		<p class='transient'>Una voz masculina me habló acentuándo la última palabra, no era una voz agradable. Al girarme vi como había\
-		varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar\
+		<p class='transient'>Una voz masculina me habló acentuando la última palabra, no era una voz agradable. Al girarme vi como había\
+		varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar, \
 		no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
 		Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'>todo se volvió oscuro y morado</a> </p>",
 		{
 			actions: {
 					'pensamiento1': function( character, system, action) {
-						system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no se si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
 					}
 			}   
 		}
@@ -56,9 +56,9 @@ undum.game.situations = {
 	situacion1: new undum.SimpleSituation (
 		"<h1>UN LUGAR DESCONOCIDO</h1>\
 		<p>Noto un dolor en el brazo, y en las piernas. Me noto tumbada y me incomoda esa <a href='./lugar' class='once'> luz morada </a> que hay en lo alto.\
-		Me percato que esa luz no está en mi habitación de mi casa y me pregunto donde coño estoy y como he llegado hasta aquí.</br>\
+		Me percato que esa luz no está en mi habitación de mi casa y me pregunto dónde coño estoy y cómo he llegado hasta aquí.</br>\
 		<p>¿Es esto un secuestro? ¿Una violación? ¿Un ajuste de cuentas? ¡Qué cojones un ajuste de cuentas! ¿A quién le debo \
-		dinero yo?. Mi cabeza ahora mismo rondaban entre 1 y 100 preguntas y ninguna de ellas sin respuesta.</br> \
+		dinero yo? Mi cabeza ahora mismo rondaban entre 1 y 100 preguntas y ninguna de ellas con respuesta.</br> \
 		Desconcertada, me siento en la cama mientras intento mirar a mi alrededor, hay luces moradas en todas las paredes, tan brillantes que \
 		casi ocultan el deterioro de los azulejos. Me siento muy mareada, pero no es momento para descansar, al contrario, aún no sé \
 		si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie, me doy cuenta de que mi brazo izquierdo está esposado \
@@ -114,18 +114,18 @@ undum.game.situations = {
 
 	situacion2: new undum.SimpleSituation(
 		"<h1>EL PASILLO INFINITO</h1>\
-		<p>El escalofrio que recorre mi piel es signo de miedo, desolación, desconcertancia... Aún no encuentro respuestas a las tantas\
-		preguntas que me planteo a cada minuto. Ni un rastro y prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
+		<p>El escalofrío que recorre mi piel es signo de miedo, desolación, desconcertancia... Aún no encuentro respuestas a las tantas\
+		preguntas que me planteo a cada minuto. Ni un rastro ni prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
 		No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
 		¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
-		No sé si deberia estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>",
+		No sé si debería estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>",
 		{
 			enter: function(character,system,to){
 				system.setQuality('llave',0);	
 			}, 
 			actions: {
 				'rapido': function( character, system, action) {
-						system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rapido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
+						system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rápido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
 						system.setQuality('puntos', character.qualities.puntos+1 );
 
 				}
@@ -138,7 +138,7 @@ undum.game.situations = {
 		"<p>Andar despacio no me está ayudando... pero creo que debo andarme con cuidado por lo que pueda pasar. </br>\
 		Mi entorno se comprende entre luces moradas, papeles sanitarios tirados por el suelo y maquinaria totalmente destrozada. Esto tiene\
 		pinta de un hospital. Me agacho con cautela para mirar de qué tratan estos <a href='situacion22'>documentos</a> e intentar entender algo. Pero nada... No encuentro \
-		Ningún tipo de información relevante que pueda ser de ayuda en este caso, además no entiendo la jerga sanitaria y todo lo relacionado con ella \
+		ningún tipo de información relevante que pueda ser de ayuda en este caso, además no entiendo la jerga sanitaria y todo lo relacionado con ella \
 		cuando yo realmente me dedico al tema empresarial de marketing. </p>",
 		{
 			enter: function(character,system,to){
@@ -149,7 +149,7 @@ undum.game.situations = {
 	
 	situacion22: new undum.SimpleSituation(
 		"<p> Miro a través de estos documentos y encuentro una carta un tanto extraña, porque se deja destacar de todos los demás documentos.</br>\
-		Ahora sí que tengo miedo. Totalmente es una <a href='./carta' class='once'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SI QUIERA SE SI ES PARA MÍ! Estoy un poco alterada y confusa\
+		Ahora sí que tengo miedo. Totalmente es una <a href='./carta' class='once'>carta</a>. ¡PERO POR QUÉ ME DA MIEDO SI NI SIQUIERA SÉ SI ES PARA MÍ! Estoy un poco alterada y confusa\
 		todo me da vueltas y todo me parece desconcertante. Ahora seguro que la carta es una carta de amor entre los enfermeros que trabajaban aquí. Alterarse es de cobardes.\
 		</p>",
         {
@@ -166,9 +166,9 @@ undum.game.situations = {
 	
 	situacion3: new undum.SimpleSituation(
 	"<h1>EL RECORRIDO</h1>\
-	<p>Todas las habitaciones me parecen iguales, algunas no tienen ni número y otras son números sin sentido... No sé si estos numeros significarán algo o serán imaginaciones mías\
+	<p>Todas las habitaciones me parecen iguales, algunas no tienen ni número y otras son números sin sentido... No sé si estos nÚmeros significarán algo o serán imaginaciones mías\
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
-	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quien sabe, puede ser que esté hasta en el extranjero.\
+	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quién sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
 	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota' class='once'>nota</a>. </p>",
 	{
@@ -197,13 +197,13 @@ undum.game.situations = {
 	
 	situacion32: new undum.SimpleSituation(
 	"<p class = 'dialogo'>Esto no es un aviso. Es una obligación que debes de cumplir si quieres ver a tu hija alguna vez en tu vida. \
-	No se cuando leeras esto, pero tarde o temprano tendrás desesperación, sufrirás alucinaciones y desmayos. El tiempo corre y sobretodo tú, corre\
+	No sé cuándo leerás esto, pero tarde o temprano tendrás desesperación, sufrirás alucinaciones y desmayos. El tiempo corre y sobre todo tú, corre\
 	todo lo que puedas hasta encontrar esa habitación. El tiempo corre... Tú decides, el destino está en tus manos.</p> </br>\
-	<p>No, no puede ser verdad, ¿TIENE A MI HIJA? ¿LA TIENE SECUESTRADA? pero,¡¡¡¡¡por qué!!!!! qué he hecho para <a href='situacion33'>sufrir</a> todo esto</p>"
+	<p>No, no puede ser verdad, ¿TIENE A MI HIJA? ¿LA TIENE SECUESTRADA? Pero, ¡¡¡¡¡¿por qué?!!!!! ¿Qué he hecho para <a href='situacion33'>sufrir</a> todo esto?</p>"
 	),
 	
 	situacion33: new undum.SimpleSituation(
-	"<p>¿Se referirá a la habitacion 213? ¿Por qué esa habitación exactamente? Tengo que buscarla como sea. Pero no sé todo esto no me cuadra mucho\
+	"<p>¿Se referirá a la habitación 213? ¿Por qué esa habitación exactamente? Tengo que buscarla como sea. Pero no sé todo esto no me cuadra mucho\
 	¿No es mucha casualidad que justamente sea esta habitación? ¿Qué esconderá esa tal habitación? ¿Será una habitación de la tortura? \
 	No me queda otra en ir en busca de esta habitación. Tengo que coger fuerzas e ir a rescatar a mi hija, que es lo único que importa ahora mismo. </br>\
 	Nada ni nadie me podrá parar hasta ir a por mi hija. Cojo el coraje que llevo dentro, me levanto de un impulso y me dirijo a la <a href='situacion4'>habitación 213</a>.</p>"
@@ -213,18 +213,18 @@ undum.game.situations = {
 	"<div class='transient'>\</br> \
     <h1>LA 213</h1>\
     <p>La cabeza comenzó a pesarme más y más y más y ... más<\p> </br>\
-	<p><a class='once' href='./uno'>¿Porque se movían las cosas solas?</a>\
+	<p><a class='once' href='./uno'>¿Por qué se movían las cosas solas?</a>\
 	</br> </br> &nbsp &nbsp \
-	<a class='once' href='./dos'>¿donde estoy?</a>\
+	<a class='once' href='./dos'>¿dónde estoy?</a>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp \
-	<a class='once' href='./tres'>¿donde?</a></br> </br> &nbsp &nbsp &nbsp &nbsp\
-	<a class='once' href='./cuatro'>¿que hago?</a> </br> <a class='once' href='./cinco'> ¿quien son?</a></br>\
+	<a class='once' href='./tres'>¿dónde?</a></br> </br> &nbsp &nbsp &nbsp &nbsp\
+	<a class='once' href='./cuatro'>¿qué hago?</a> </br> <a class='once' href='./cinco'> ¿quiénes son?</a></br>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
 	<a class='once' href='./seis'>quiero salir</a></br> \
 	<a class='once' href='./siete'>quiero irme a casa</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./ocho'>no quiero esto</a>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
 	<a href='./nueve'>quiero volver</a></br> <a class='once' href='./diez'>no quiero que me hagan nada</a></p></br>\
-	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>¿Donde esta Thalia?</a></p></div>",
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>¿Dónde está Thalia?</a></p></div>",
 	  {
 	      actions: {
                 'uno': function( character, system, action) {
@@ -248,7 +248,7 @@ undum.game.situations = {
 					system.setCharacterText( "<p></p>" );
 				},
 				'siete': function( character, system, action) {
-					system.setCharacterText( "<p>A mi me gusta el morado</p>" );
+					system.setCharacterText( "<p>A mí me gusta el morado</p>" );
 				},
 				'ocho': function( character, system, action) {
 					system.setCharacterText( "<p>¿está?¿donde?</p>" );
@@ -270,8 +270,8 @@ undum.game.situations = {
           
     "<h1>ADELANTE</h1>\
 	<p></p>\
-	<p class='dialogo'> ¿Cuanto tiempo llevo aquí? Me duele la cabeza...</p> \
-    <p>Parece que he vuelto a desmayarme, este infierno parece no tener fin. Ni si quiera recuerdo cuándo fue la última vez que\
+	<p class='dialogo'> ¿Cuánto tiempo llevo aquí? Me duele la cabeza...</p> \
+    <p>Parece que he vuelto a desmayarme, este infierno parece no tener fin. Ni siquiera recuerdo cuándo fue la última vez que\
 	me llevé algo de comida a la boca. Tengo que buscar una salida, aunque encontrar un poco de sustento puede ser una buena idea. \
 	En esta sala hay algunas ventanas rotas, las han tapado con tablas. Pero hay rendijas, podría <a href='situacion52'>mirar al exterior</a>. \
 	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
@@ -281,7 +281,7 @@ undum.game.situations = {
     ),
         
 	situacion52: new undum.SimpleSituation(
-    "<p>El sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
+    "<p>El Sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
 	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
     </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
@@ -290,7 +290,7 @@ undum.game.situations = {
     situacion53: new undum.SimpleSituation(
     "</br>\<p>Con cierta ansiedad, me dispongo a empujar la puerta:\
     <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
-	Al abrirla, el chirrido que producen las oxidads visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
+	Al abrirla, el chirrido que producen las oxidadas visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
      </p>"
         
     ),
@@ -458,12 +458,12 @@ undum.game.situations = {
 	situacion8: new undum.SimpleSituation(
 	"<h1>UN NUEVO COMIENZO</h1>\
 	<p>Empujo con la barra de metal que hemos cogido hasta abrir la puerta, aunque con cautela puesto no queremos forzar y romper la barra de metal antes que la puerta\
-	Comienza a abrirse la puerta, pero aún falta un poco más. Con ayuda de mi hija y yo podremos salir de aqui. </br>\
+	Comienza a abrirse la puerta, pero aún falta un poco más. Con ayuda de mi hija y yo podremos salir de aquí. </br>\
 	Aún no me lo creo. He conseguido rescatar a mi hija en este sitio de mierda. ¿Ahora qué queda? ¿Una psicosis que tendremos que superar?\
-	No sé es todo demasiado extraño, Aún no le encuentro explicación a por qué ha sucedido todo esto y quiero mis motivos aparentes. \
-	¿Denunciar a la policia? ¿Qué pruebas tenemos? ¿O es mejor olvidarlo todo y hacer como si no ha pasado nada? </br>\
+	No sé. es todo demasiado extraño, Aún no le encuentro explicación a por qué ha sucedido todo esto y quiero mis motivos aparentes. \
+	¿Denunciar a la policía? ¿Qué pruebas tenemos? ¿O es mejor olvidarlo todo y hacer como si no ha pasado nada? </br>\
 	Conseguimos abrir la puerta del todo. Es un lugar totalmente desconocido en el que nunca podría haberme imaginado. Ahora toda correr a toda velocidad\
-	con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mio...</p>\
+	con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mío...</p>\
 	<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p>"
 	),
     
