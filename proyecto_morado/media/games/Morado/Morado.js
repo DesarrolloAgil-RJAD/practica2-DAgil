@@ -449,36 +449,35 @@ undum.game.situations = {
     situacion72: new undum.SimpleSituation(
 		"<p>Una cama rota. Sí. Con esa <a href='./barra' class='once'>barra de metal</a> podríamos forzar la puerta y <a href='situacion8'>salir de aquí</a>. </p>",
         {
-		actions: {
+			actions: {
 			'barra': function( character, system, action) {
 					system.setQuality('barra',1);		
 			}
-			
 		}
     }
     
     ),
 	
 	situacion8: new undum.SimpleSituation(
-	"<h1>UN NUEVO COMIENZO</h1>\
-	<p>Empujo con la barra de metal que hemos cogido hasta abrir la puerta, aunque con cautela puesto no queremos forzar y romper la barra de metal antes que la puerta\
-	Comienza a abrirse la puerta, pero aún falta un poco más. Con ayuda de mi hija y yo podremos salir de aquí. </br>\
-	Aún no me lo creo. He conseguido rescatar a mi hija en este sitio de mierda. ¿Ahora qué queda? ¿Una psicosis que tendremos que superar?\
-	No sé. es todo demasiado extraño, Aún no le encuentro explicación a por qué ha sucedido todo esto y quiero mis motivos aparentes. \
-	¿Denunciar a la policía? ¿Qué pruebas tenemos? ¿O es mejor olvidarlo todo y hacer como si no ha pasado nada? </br>\
-	Conseguimos abrir la puerta del todo. Es un lugar totalmente desconocido en el que nunca podría haberme imaginado. Ahora toda correr a toda velocidad\
-	con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mío...</p>\
-	<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p>"
+		"<h1>UN NUEVO COMIENZO</h1>\
+		<p>Empujo con la barra de metal que hemos cogido hasta abrir la puerta, aunque con cautela puesto que no queremos forzar y romper la barra de metal antes que la puerta.\
+		Comienza a abrirse la puerta, pero falta un poco más. Con ayuda de mi hija y yo podremos salir de aquí. </br>\
+		Aún no me lo creo. He conseguido rescatar a mi hija en este sitio de mierda. ¿Ahora qué queda? ¿Una psicosis que tendremos que superar?\
+		No sé. es todo demasiado extraño, Aún no le encuentro explicación a por qué ha sucedido todo esto y quiero mis motivos aparentes. \
+		¿Denunciar a la policía? ¿Qué pruebas tenemos? ¿O es mejor olvidarlo todo y hacer como si no ha pasado nada? </br>\
+		Conseguimos abrir la puerta del todo. Es un lugar totalmente desconocido en el que nunca podría haberme imaginado. Ahora toda correr a toda velocidad\
+		con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mío...</p>\
+		<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p>"
 	),
     
 
 	situacion81: new undum.SimpleSituation(
-	"<p>En la nota pone lo siguiente</p>\
-	<p class='dialogo'>Nunca pude llegar a creer que saldrías de aquí, y menos con tu hija. Te veo muy pronto. Puede que sea una amenanza... O no. Soy quien menos te lo \
-	esperas. Ahora empieza a valorar lo que es la vida y más con tu hija.</p>\
-	<p>Una rabia creció dentro de mí que hizo que derramase una lágrima en mi rostro. Creo que solo me quedan fuerzas para correr con mi hija y dejar todo el pasado atrás.</p></br>\
-	<p class='dialogo'>-Te quiero Thalia, nunca te separes de mí.</p> </br>\
-	<h1>FIN</h1>"
+		"<p>En la nota pone lo siguiente</p>\
+		<p class='dialogo'>Nunca pude llegar a creer que saldrías de aquí, y menos con tu hija. Te veo muy pronto. Puede que sea una amenanza... O no. Soy quien menos te lo \
+		esperas. Ahora empieza a valorar lo que es la vida y más con tu hija.</p>\
+		<p>Una rabia creció dentro de mí que hizo que derramase una lágrima en mi rostro. Creo que solo me quedan fuerzas para correr con mi hija y dejar todo esto atrás.</p></br>\
+		<p class='dialogo'>-Te quiero Thalia, nunca te separes de mí.</p> </br>\
+		<h1>FIN</h1>"
 	),
 };
 
