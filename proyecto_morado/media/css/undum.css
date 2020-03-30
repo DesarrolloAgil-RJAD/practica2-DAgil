@@ -172,7 +172,7 @@ h1:first-child {
     margin-top: 0;
 }
 a {
-    color: #900;
+    color: #432277;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
@@ -199,6 +199,7 @@ img.float_left {
 
 #tools_wrapper {
     position: fixed;
+	background: #e6e6c6 url("../img/fondo_texto.jpg") repeat left top;
     width: 100%;
     max-width: 56em;
     top: 2.2em;
@@ -238,7 +239,7 @@ img.float_left {
 }
 .buttons button {
     font-size: 0.8em;
-    background: #876;
+	background: #e6e6c6 url("../img/fondo_pagina.jpg") repeat left top;
     color: #e6e6c6;
     border: none;
     padding: 0.3em 1.0em;
@@ -259,6 +260,7 @@ img.float_left {
 
 #legal {
     max-width: 33em;
+	background: #e6e6c6 url("../img/pie.jpg") repeat left top;
     color: #654;
     margin: 1em auto 0 auto;
     padding-bottom: 2.2em;
