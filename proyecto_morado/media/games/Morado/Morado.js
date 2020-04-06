@@ -276,7 +276,7 @@ undum.game.situations = {
 	En esta sala hay algunas ventanas rotas, las han tapado con tablas. Pero hay rendijas, podría <a href='situacion52'>mirar al exterior</a>. \
 	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
 	<p>A la derecha, otra puerta, por la que se ven unas escaleras. No dispongo de mucho tiempo, puede que me estén buscando. \
-	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
+	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>"
           
     ),
         
@@ -284,13 +284,14 @@ undum.game.situations = {
     "<p>El Sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
 	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
-    </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='situacion6'>escaleras</a>.</p>"
+    </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>"
     ),
 	
     situacion53: new undum.SimpleSituation(
     "</br>\<p>Con cierta ansiedad, me dispongo a empujar la puerta:\
     <p class='dialogo'>Esta dichosa puerta tiene que llegar hasta alguna salida. Tengo que intentarlo</p>\
-	Al abrirla, el chirrido que producen las oxidadas visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
+	Al abrirla, el chirrido que producen las oxidadas visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\
+	Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
      </p>"
         
     ),
@@ -310,8 +311,60 @@ undum.game.situations = {
         }
     ),
     situacion55: new undum.SimpleSituation(
-    "<p>En el patio hay 3 puertas más, todas están cerradas, no tengo más remedio que <a href='situacion6' class='once'>volver por las escaleras</a></p>"
+    "<p>En el patio hay 3 puertas más, todas están cerradas, no tengo más remedio que <a href='presituacion' class='once'>volver por las escaleras</a></p>"
     ),
+
+	presituacion: new undum.SimpleSituation(
+	"<p>Continuo mi trayecto por las escaleras hasta que veo algo que me causó fatiga. UNA NOTA.</br>\
+	Junto a esta nota, había 2 objetos muy parecidos entre sí, enganchados por una serie de engranajes y cuerdas. Me daba bastante miedo. No sabía muy bien si era una trampa \
+	pero me dispuse a <a href='nota'>leer la nota</a>.  </p>"
+	),
+	
+	nota: new undum.SimpleSituation(
+	"<p class='dialogo'> Si has llegado hasta aqui, enhorabuena. Se nota que tienes ganas de ver a tu hija y poder escapar. Pero no todo es tan fácil como lo has tenido todo siempre tu vida.\
+	Veamos hasta dónde eres capaz de llegar. ¿Arriesgar o poder morir sin ver a tu hija y por consiguiente, que muera tu hija tambien?\
+	Como podrás ver, al lado de esta preciosa carta he dejado un par de objetos que te pueden sonar y que has tenido en tu vida y son bastante valiosos. Se me olvidaba comentarte, que uno \
+	es el correcto, es decir, estos objetos están enganchados a una serie de engranajes con una serie de armas encima de tu cabeza. Una escopeta está disparada, en cambio... la otra no. \
+	¿Ahora, que es lo más importante para ti? ¿Todo lo que has tenido en tu vida o la vida en si? ¿Vivir o  morir? <Esa es la cuestión. \
+	El primer objeto es un cuchillo que puede que te sirva a lo largo del recorrido y el otro objeto es un documento que falsificaste en la empresa con tal de que no fuera a la quiebra \
+	y solo pensar en dinero y engañar a las personas. Con estos objetos puedes ir a la cárcel.</p>  <p class='dialogo'>... Asi que elige bien... o sino.. Morirás. Si eliges bien, te veré pronto. El tiempo sigue corriendo. </p> \
+	<p><a href='eleccionq'>Tú tienes la última palabra</a> </p>"
+	),
+	
+	eleccionq: new undum.SimpleSituation(
+	"<p>No puede ser... Este documento puede implicarme la ruina para todo el mundo... ¿Por qué hice eso? el ser humano es corruptible... No tengo tiempo para discursos filosóficos \
+	Mi hija está secuestrada y yo aquí decidiendo... Pero ¿Qué es mejor, que coja este documento para salvar mi vida o con este documento si lo dejo me arruinará la vida? Creo que ahora mismo \
+	todo me abruma. Si cogo el cuchillo, podre salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opcion incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
+	),
+	
+
+	cuchillo: new undum.SimpleSituation(
+	"<p>Cojo con suavidad el cuchillo y veo que no pasa nada. Miro hacia arriba y el cañon no hace nada extraño. Esta era la buena elección. Debo <a href='situacion6'> continuar mi camino </a> pero aún así mi cabeza sigue dando muchas vueltas \
+	y no me encuentro nada bien. Espero encontrar a mi hija porque creo que cada vez estoy más cerca de encontrarla. Espero. </p>"
+	,{
+			actions: {
+				'cuchillo': function( character, system, action) {
+						system.setQuality('cuchillo',1);		
+				}
+			}
+		
+		
+	}
+	),
+	
+	documento: new undum.SimpleSituation(
+	"<p>Al coger con suavidad los documentos, veo que los engranajes se mueven de una forma extraña y solo puedo oir el ruido del cañon y caer mientras que una bala ha atravesado mi cráneo. Todo ha acabado aquí. Mi egoismo tiene la culpa de todo \
+	Nunca supe elegir bien en mi vida. Espero encontrarte en alguna parte Thalia. Te quiero</p> </br> \
+	<h1>FIN</h1> </br>\
+	<p><a href='eleccionqu'>Volver a intentarlo</a></p>"
+	),
+	
+	eleccionqu: new undum.SimpleSituation(
+	"<p>No puede ser... Este documento puede implicarme la ruina para todo el mundo... ¿Por qué hice eso? el ser humano es corruptible... No tengo tiempo para discursos filosóficos \
+	Mi hija está secuestrada y yo aquí decidiendo... Pero ¿Qué es mejor, que coja este documento para salvar mi vida o con este documento si lo dejo me arruinará la vida? Creo que ahora mismo \
+	todo me abruma. Si cogo el cuchillo, podre salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opcion incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
+	),
+	
 
 	situacion6: new undum.SimpleSituation(
 	"<h1>ENCUENTRO INESPERADO</h1> \
@@ -319,6 +372,7 @@ undum.game.situations = {
 	debería intentar mantener mi mente ocupada. Quizá <a href='hablar'>hablar en voz alta</a> me ayude a mantener la cordura; o algo \
 	tan simple como <a href='cantar'>tararear una canción</a>, la que sea… (<a href='ignorar'>No hacer nada</a>)</p>"
 	),
+	
 
 	hablar:  new undum.SimpleSituation(
 	"<p>Decido empezar a hablar sobre el futuro, necesito autoconvencerme para no perder la esperanza: </p>\
@@ -511,7 +565,6 @@ undum.game.qualities = {
 	nota: new undum.OnOffQuality(
 		"Nota", {priority: "0002", group:'inventario', onDisplay:"&#10003;"}
 	),
-	
     carta: new undum.OnOffQuality(
         "Carta antigua", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
@@ -520,6 +573,9 @@ undum.game.qualities = {
     ),
     navaja: new undum.OnOffQuality(
         "Navaja", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	cuchillo: new undum.OnOffQuality(
+        "Cuchillo", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
