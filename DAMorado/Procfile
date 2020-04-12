@@ -1,0 +1,1 @@
+web: java -Duser.country=ES -Duser.language=ES -Dpayaramicro.noCluster=true -jar target/DAMorado-1-microbundle.jar --port $PORT
