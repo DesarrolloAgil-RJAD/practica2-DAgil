@@ -42,6 +42,8 @@ Practica 2 Desarrollo Agil - Morado
 
 > 5. Sprint 1. Historias de Usuario
     
+    Product Owner:Rubén Guijarro Ortega
+    
     Se han escogido las historias de usuario innegociables de forma que se completen cuanto antes.
     De esta forma, todo el trabajo posterior tendrá un enfoque de mejora del valor del proyecto.
     También se ha realizado una valoración aproximada de las horas de trabajo basada en la dificultad
@@ -128,6 +130,8 @@ Practica 2 Desarrollo Agil - Morado
 
 > 6. Sprint 2. Historias de Usuario
     
+    Product Owner: David Padilla Montero
+    
     Se han escogido las historias de usuario opcionales, es decir, negociables.
     De esta forma, se mejorará el proyecto en función de lo que se tenía anteriormente y se irá añadiendo contenido para tener un nuevo entregable.
     También se ha realizado una valoración aproximada de las horas de trabajo basada en la dificultad
@@ -136,7 +140,7 @@ Practica 2 Desarrollo Agil - Morado
 
     A continuación se presenta el aspecto y destancan los cambios tras el Product Backlog Refinement:
     
-    ![Product Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbansprint1.PNG "Sprint Backlog")
+    ![Product Backlog](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/kanbansprint2.PNG "Sprint Backlog")
     
 > 6.1 Sprint 2. Sprint Review.
 
@@ -168,7 +172,7 @@ Practica 2 Desarrollo Agil - Morado
 	
     Demostración del incremento. 
     
-    ![Product Review](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/productreview.PNG "Product Review")
+    ![Product Review](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/productreview2.PNG "Product Review")
     
     Orientación del siguiente Sprint. Maximizar valor del Producto.
     	
@@ -191,7 +195,7 @@ Practica 2 Desarrollo Agil - Morado
 		- Daily Scrum, con muy buen resultado
 		- Scrum Review, Scrum Retrospective
 		
-		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/scrumreview.PNG "Reunión")
+		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/scrumreview2.PNG "Reunión")
 		
 	Herramientas:
 		- Desarrollo: SmartGit, NotePad++, Bloc de Notas, Brackets
@@ -205,7 +209,7 @@ Practica 2 Desarrollo Agil - Morado
 		- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
 		- Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
     
-    		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel.PNG "Sprint Retrospective")
+    		![Sprint Retrospective](https://raw.githubusercontent.com/DesarrolloAgil-RJAD/practica2-DAgil/master/recursos/excel2.PNG "Sprint Retrospective")
 		
 	Cosas a mejorar:
 		- Realmente no existe que poder mejorar como equipo, dadas las situaciones actuales. No se ha podido medir correctamente 		   toda la situación
