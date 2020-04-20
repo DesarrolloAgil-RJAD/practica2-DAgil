@@ -170,7 +170,7 @@ undum.game.situations = {
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
 	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quién sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
-	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota' class='once'>nota</a>. </p>",
+	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota'>nota</a>. </p>",
 	{
 		actions: {
 			'botella': function(character, system, action){
