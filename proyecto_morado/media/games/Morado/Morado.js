@@ -426,7 +426,7 @@ undum.game.situations = {
 	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
 	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
 	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
-	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
+	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='prepuzzle'>continuar</a>.</p>",
 	{
 	    enter: function(character,system,to){
 			system.setQuality('hija',1);	
@@ -434,7 +434,22 @@ undum.game.situations = {
 	  }
 	 
 	),
-    
+	
+	prepuzzle: new undum.SimpleSituation(
+		"<p>Juntas, saldremos de esta, pero debemos permanecer unidas ante esta extraña situación. Sigo recordando cosas de mi pasado que sean todos las causas \
+		de porque estoy aqui. Aprieto fuerte la mano de mi hija y le susurro al oido que la quiero muchisimo y no iba a permitir que nada ni nadie le iba a hacer daño.\
+		Pero... No todo queda ahi. En el fondo sabía que nadie por amor al arte me iba a dejar a encerrada por la nada, ni para hacerme daño... Sigo pensando en mi pasado, en el cuchillo o en el documento de antes... \
+		Cojo en brazos a mi hija para poder ir mas rápido, y poder encontrar una salida, como objetivo de esto. Sabía que si antes había tenido una trampa, ¿Por qué no iba a tenerla otra vez? \
+		Cojo aire continuo mi camino por el <a href='pasillopuzzle'>pasillo</a>. </p>"
+    ),
+	
+	pasillopuzzle: new undum.SimpleSituation(
+		"<p>Siempre me muevo por los pasillos, por que son clave para encontrar alguna salida. Pero hubo algo que captó mi atención. Llevaba en brazos a Thalia pero me detuve poco a poco \
+		y la solte en el suelo para asimilarlo. Había un cartel luminoso con una flecha para seguir hacia adelante. </p>"
+	
+	
+	),
+
     situacion7: new undum.SimpleSituation(
 		"<h1>HACIA LA SALIDA</h1> \
 		<p>Unas luces moradas parpadeantes que iluminan todo un pasillo lleno de puertas. Parece que son habitaciones. Al final del pasillo \
