@@ -342,11 +342,9 @@ undum.game.situations = {
 	"<p>Cojo con suavidad el cuchillo y veo que no pasa nada. Miro hacia arriba y el cañon no hace nada extraño. Esta era la buena elección. Debo <a href='situacion6'> continuar mi camino </a> pero aún así mi cabeza sigue dando muchas vueltas \
 	y no me encuentro nada bien. Espero encontrar a mi hija porque creo que cada vez estoy más cerca de encontrarla. Espero. </p>"
 	,{
-			actions: {
-				'cuchillo': function( character, system, action) {
-						system.setQuality('cuchillo',1);		
-				}
-			}
+		enter: function(character,system,to){
+			system.setQuality('cuchillo',1);	
+		},
 		
 		
 	}
@@ -405,7 +403,7 @@ undum.game.situations = {
 	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
 	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
 	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano (no le gusta que la lleve en brazos, \
-	dice que ya es 'una niña muy grande' para eso). Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
+	dice que ya es 'una niña muy grande' para eso). Estamos más que preparadas para <a href='prepuzzle'>continuar</a>.</p>",
 	{
 	    enter: function(character,system,to){
 			system.setQuality('hija',1);	
@@ -464,7 +462,7 @@ undum.game.situations = {
 	
 	eleccion: new undum.SimpleSituation(
 		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
-		¿<a href=''>boligrafo</a> o <a href='doc'>documento</a>?  ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>?  ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
 	),
 	
 	
@@ -473,13 +471,9 @@ undum.game.situations = {
 	"<p>Cojo el boligrafo con cautela puesto que no me fio de nada de aqui. Veo que no pasa nada y me sale un suspiro de alivio y miro a mi hija con ojos de esperanza. No sé para qué cojones es el puto boligrafo pero debemos <a href='situacion7'> continuar nuestro camino de salida </a> pero aún así mi cabeza sigue dando muchas vueltas \
 	y no me encuentro nada bien. Ojalá y sea esto la última prueba que superar, si a esto se le puede llamar prueba. </p>"
 	,{
-			actions: {
-				'boligrafo': function( character, system, action) {
-						system.setQuality('boligrafo',1);		
-				}
-			}
-		
-		
+		enter: function(character,system,to){
+			system.setQuality('boligrafo',1);	
+		},
 	}
 	),
 	
@@ -492,7 +486,7 @@ undum.game.situations = {
 	
 	intento: new undum.SimpleSituation(
 		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
-		¿<p href=''>boligrafo</p> o <p href='doc'>documento</p>? ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>? ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
 	),
 	
 
@@ -662,6 +656,7 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
+	system.setQuality( "boligrafo" , false );
     system.setQuality( "hija" , false );
     system.setQuality( "llave" , false );
 	system.setQuality( "barra" , false );
