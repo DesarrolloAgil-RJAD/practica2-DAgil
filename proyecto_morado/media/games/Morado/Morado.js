@@ -445,10 +445,56 @@ undum.game.situations = {
 	
 	pasillopuzzle: new undum.SimpleSituation(
 		"<p>Siempre me muevo por los pasillos, por que son clave para encontrar alguna salida. Pero hubo algo que captó mi atención. Llevaba en brazos a Thalia pero me detuve poco a poco \
-		y la solte en el suelo para asimilarlo. Había un cartel luminoso con una flecha para seguir hacia adelante. </p>"
-	
-	
+		y la solte en el suelo para asimilarlo. Había un cartel luminoso con una flecha para seguir hacia adelante. La flecha llevaba hacia una habitación con llave, esta llave estaba en el suelo y otra nota al lado. \
+		Las notas eran algo ya normal en este sitio... - Pensé. La nota ponía lo siguiente: </p>\
+		</br>\
+		<p class='dialogo'>Abre la puerta y me encontrarás.</p>\
+		<p>Cogí la llave y abrí la puerta con cuidado. La habitación estaba iluminada del color habitual de este sitio: morado. \
+		Entramos a la situación y le dije a mi hija que tuviera cuidado, que no tocara nada. Habia otra nota en el suelo con 2 objetos un poco peculiares... Esta historia me suena... </p>\
+		</br>\
+		<p class='dialogo'>Bienvenidas a vuestro juego, no es de disfrute para mí tener que realizar todo esto para que aprendas la lección o valores lo que es la vida un poco más. \
+		Siento por meter a tu hija en todo esto, ya que ella no tiene la culpa de nada... Pobrecita, en fín. Te estuve vigilando cuando estafaste a una empresa por puro marketing en beneficio para la empresa que trabajabas, \
+		solo por seguir las indicaciones del cabrón de tu jefe, y no seguir tu puro instinto. Yo se que no eres mala gente, pero una lección para decidir sobre tí misma nunca está de más. \
+		Lo primero es indicarte que significan estos objetos. Lo primero tenemos unos documentos que te implican de correlación por haber estafado a la empresa para beneficio de tu jefe. Y lo segundo es un bolígrafo. \
+		La prueba es sencilla. Tienes que coger uno de los objetos. Uno de los dos está conectado a una pequeña granada. Vuestro futuro está en tus manos. Piensate muy bien si de verdad quieres destruir ese documento antes que la granada os destruya a vosotras. \
+		</br>\
+		<a href='eleccion'>Continuar</a> </p>"
+
 	),
+	
+	eleccion: new undum.SimpleSituation(
+		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
+		¿<a href=''>boligrafo</a> o <a href='doc'>documento</a>?  ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+	),
+	
+	
+	
+	boligrafo: new undum.SimpleSituation(
+	"<p>Cojo el boligrafo con cautela puesto que no me fio de nada de aqui. Veo que no pasa nada y me sale un suspiro de alivio y miro a mi hija con ojos de esperanza. No sé para qué cojones es el puto boligrafo pero debemos <a href='situacion7'> continuar nuestro camino de salida </a> pero aún así mi cabeza sigue dando muchas vueltas \
+	y no me encuentro nada bien. Ojalá y sea esto la última prueba que superar, si a esto se le puede llamar prueba. </p>"
+	,{
+			actions: {
+				'boligrafo': function( character, system, action) {
+						system.setQuality('boligrafo',1);		
+				}
+			}
+		
+		
+	}
+	),
+	
+	doc: new undum.SimpleSituation(
+	"<p>Al coger con suavidad los documentos, veo que hay debajo un hueco con algo extraño, la granada. Con un hijo sostenía los documentos pero nada puro parar aquello.  \
+	Nunca supe elegir bien en mi vida. Espero encontrarte en alguna parte Thalia. Te quiero</p> </br> \
+	<h1>FIN</h1> </br>\
+	<p><a href='intento'>Volver a intentarlo</a></p>"
+	),
+	
+	intento: new undum.SimpleSituation(
+		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
+		¿<p href=''>boligrafo</p> o <p href='doc'>documento</p>? ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+	),
+	
 
     situacion7: new undum.SimpleSituation(
 		"<h1>HACIA LA SALIDA</h1> \
@@ -591,6 +637,9 @@ undum.game.qualities = {
     ),
 	cuchillo: new undum.OnOffQuality(
         "Cuchillo", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
+    ),
+	boligrafo: new undum.OnOffQuality(
+        "Boligrafo", {priority:"0002", group:'inventario', onDisplay:"&#10003;"}
     ),
 	puntos: new undum.IntegerQuality(
 		"Puntuación", {priority:"0003", group:'progress', onDisplay:"&#10003;"}
