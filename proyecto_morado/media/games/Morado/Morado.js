@@ -321,25 +321,25 @@ undum.game.situations = {
 	),
 	
 	nota: new undum.SimpleSituation(
-	"<p class='dialogo'> Si has llegado hasta aquí, enhorabuena. Se nota que tienes ganas de ver a tu hija y poder escapar. Pero no todo es tan fácil como lo has tenido todo siempre tu vida.\
-	Veamos hasta dónde eres capaz de llegar. ¿Arriesgar o poder morir sin ver a tu hija y por consiguiente, que muera tu hija también?\
+	"<p class='dialogo'> Si has llegado hasta aqui, enhorabuena. Se nota que tienes ganas de ver a tu hija y poder escapar. Pero no todo es tan fácil como lo has tenido todo siempre tu vida.\
+	Veamos hasta dónde eres capaz de llegar. ¿Arriesgar o poder morir sin ver a tu hija y por consiguiente, que muera tu hija tambien?\
 	Como podrás ver, al lado de esta preciosa carta he dejado un par de objetos que te pueden sonar y que has tenido en tu vida y son bastante valiosos. Se me olvidaba comentarte, que uno \
 	es el correcto, es decir, estos objetos están enganchados a una serie de engranajes con una serie de armas encima de tu cabeza. Una escopeta está disparada, en cambio... la otra no. \
-	¿Ahora, qué es lo más importante para ti? ¿Todo lo que has tenido en tu vida o la vida en si? ¿Vivir o  morir? <Esa es la cuestión. \
+	¿Ahora, que es lo más importante para ti? ¿Todo lo que has tenido en tu vida o la vida en si? ¿Vivir o  morir? <Esa es la cuestión. \
 	El primer objeto es un cuchillo que puede que te sirva a lo largo del recorrido y el otro objeto es un documento que falsificaste en la empresa con tal de que no fuera a la quiebra \
-	y solo pensar en dinero y engañar a las personas. Con estos objetos puedes ir a la cárcel.</p>  <p class='dialogo'>... Así que elige bien... o si no.. Morirás. Si eliges bien, te veré pronto. El tiempo sigue corriendo. </p> \
+	y solo pensar en dinero y engañar a las personas. Con estos objetos puedes ir a la cárcel.</p>  <p class='dialogo'>... Asi que elige bien... o sino.. Morirás. Si eliges bien, te veré pronto. El tiempo sigue corriendo. </p> \
 	<p><a href='eleccionq'>Tú tienes la última palabra</a> </p>"
 	),
 	
 	eleccionq: new undum.SimpleSituation(
 	"<p>No puede ser... Este documento puede implicarme la ruina para todo el mundo... ¿Por qué hice eso? el ser humano es corruptible... No tengo tiempo para discursos filosóficos \
 	Mi hija está secuestrada y yo aquí decidiendo... Pero ¿Qué es mejor, que coja este documento para salvar mi vida o con este documento si lo dejo me arruinará la vida? Creo que ahora mismo \
-	todo me abruma. Si cojo el cuchillo, podré salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opción incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
+	todo me abruma. Si cogo el cuchillo, podre salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opcion incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
 	),
 	
 
 	cuchillo: new undum.SimpleSituation(
-	"<p>Cojo con suavidad el cuchillo y veo que no pasa nada. Miro hacia arriba y el cañón no hace nada extraño. Esta era la buena elección. Debo <a href='situacion6'> continuar mi camino </a> pero aún así mi cabeza sigue dando muchas vueltas \
+	"<p>Cojo con suavidad el cuchillo y veo que no pasa nada. Miro hacia arriba y el cañon no hace nada extraño. Esta era la buena elección. Debo <a href='situacion6'> continuar mi camino </a> pero aún así mi cabeza sigue dando muchas vueltas \
 	y no me encuentro nada bien. Espero encontrar a mi hija porque creo que cada vez estoy más cerca de encontrarla. Espero. </p>"
 	,{
 			actions: {
@@ -353,7 +353,7 @@ undum.game.situations = {
 	),
 	
 	documento: new undum.SimpleSituation(
-	"<p>Al coger con suavidad los documentos, veo que los engranajes se mueven de una forma extraña y solo puedo oir el ruido del cañón y caer mientras que una bala ha atravesado mi cráneo. Todo ha acabado aquí. Mi egoísmo tiene la culpa de todo \
+	"<p>Al coger con suavidad los documentos, veo que los engranajes se mueven de una forma extraña y solo puedo oir el ruido del cañon y caer mientras que una bala ha atravesado mi cráneo. Todo ha acabado aquí. Mi egoismo tiene la culpa de todo \
 	Nunca supe elegir bien en mi vida. Espero encontrarte en alguna parte Thalia. Te quiero</p> </br> \
 	<h1>FIN</h1> </br>\
 	<p><a href='eleccionqu'>Volver a intentarlo</a></p>"
@@ -377,7 +377,7 @@ undum.game.situations = {
 	hablar:  new undum.SimpleSituation(
 	"<p>Decido empezar a hablar sobre el futuro, necesito autoconvencerme para no perder la esperanza: </p>\
 	<p class='dialogo'>-En cuanto encuentre a mi hija, saldremos pitando de aquí juntas, volveremos a nuestra rutina de siempre y recordaremos todo esto \
-	como solo un mal sueño. Sí, -afirmo mientras empiezan a brotar lágrimas de mis ojos- una simple pesadilla. Por favor Thalia, espero que estés sana y sal- </br>\
+	como solo un mal sueño. Sí, -afirmo mientras empiezan a brotar lágrimas de mis ojos- una simple pesadilla. Por favor Thalia, espero que estés sana y sal- \
 	-¿M-mami? </p>\
 	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! \
 	Espera, esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
@@ -385,7 +385,7 @@ undum.game.situations = {
 
 	cantar: new undum.SimpleSituation(
 	"<p>Sin apenas pensarlo, empiezo a tararear la nana favorita de Thalia, deseando con toda mi alma que se encuentre bien.</p> \
-	<p class='dialogo'>-La, lará, laralá, la, lalá, lara lalá -comienzan a caer lágrimas por mis mejillas, pero no dejo de tararear- la la, la la lá.. </br> \
+	<p class='dialogo'>-La, lará, laralá, la, lalá, lara lalá -comienzan a caer lágrimas por mis mejillas, pero no dejo de tararear- la la, la la lá.. \
 	-¿Mami? ¿Mamá? </p>\
 	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! Espera, \
 	esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
@@ -396,13 +396,13 @@ undum.game.situations = {
 	<p class='dialogo'>-¿T-Thalia? ¿Eres tú? </p>\
 	<p>Los sollozos se detienen, a la vez que comienzan a sonar pasitos. Me alejo de la puerta cautelosamente mientras se abre \
 	muy despacio, dejando asomar una pequeña silueta que me mira con recelo. </p>\
-	<p class='dialogo'>-¿Mamá? ¿De verdad eres mamá? </br>\
-	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? </br>\
-	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… </br>\
-	-Y yo a ti cariño, ¿has estado sola mucho tiempo? </br>\
-	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. </br>\
-	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. </br>\
-	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. </br>\
+	<p class='dialogo'>-¿Mamá? ¿De verdad eres mamá? \
+	-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
+	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
+	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
+	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
+	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
+	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
 	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
 	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano (no le gusta que la lleve en brazos, \
 	dice que ya es 'una niña muy grande' para eso). Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
@@ -419,12 +419,12 @@ undum.game.situations = {
 	pasos más, escucho como la puerta que acabo de pasar se abre muy lentamente, y de ella sale una pequeña figura, que empieza a mirar a su alrededor, hasta que me encuentra.</p>\
 	<p class='dialogo'>-¿Mamá? </p>\
 	<p>¡Es ella! ¡Es Thalia! </p>\
-	<p class='dialogo'>-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? </br>\
-	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… </br>\
-	-Y yo a ti cariño, ¿has estado sola mucho tiempo? </br>\
-	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. </br>\
-	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. </br>\
-	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. </br>\
+	<p class='dialogo'>-¡Thalia, amor mío! -grito de alegría mientras me abalanzo a abrazarla- ¡¿Estás bien?! ¿Te duele algo vida mía? \
+	-Mami -dice mientras sonríe con los ojos llorosos-, estoy bien, pero te he echado mucho de menos… \
+	-Y yo a ti cariño, ¿has estado sola mucho tiempo? \
+	-No.. me desperté hace poco y al ver que no estabas decidí esperarte aquí. \
+	-Muy bien Thalia -le digo mientras acaricio su pequeña cabeza-, has sido una niña muy valiente. \
+	-Gracias mamá, ¿podemos volver a casa? Tengo sueño. \
 	-No te preocupes mi amor, ahora que estamos juntas encontraremos la salida en un periquete. </p>\
 	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='situacion7'>continuar</a>.</p>",
 	{
