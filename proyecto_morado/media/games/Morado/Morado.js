@@ -115,7 +115,11 @@ undum.game.situations = {
 			},
 			actions: {
 					'ayuda1': function( character, system, action) {
-						ayuda="<p>¿Qué crees que habrá detrás de la puerta?</p>"+linea;
+						if(character.qualities.llave==1){
+							ayuda="<p>¿Esta llave abrirá la puerta?</p>"+linea;
+							}else{
+							ayuda="<p>¿Qué crees que habrá detrás de la puerta? debería buscar más</p>"+linea;
+						}						
 						system.setCharacterText(ayuda);
 					}				
 			}			
