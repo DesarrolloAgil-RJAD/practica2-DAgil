@@ -177,7 +177,7 @@ undum.game.situations = {
 			}   ,
 			actions: {
 				'ayuda1': function( character, system, action) {
-						ayuda="<p>Cotinua!</p>"+linea;
+						ayuda="<p>Continua!</p>"+linea;
 						system.setCharacterText( ayuda);
 					}				
 			}
@@ -197,9 +197,8 @@ undum.game.situations = {
 						No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 				},
 				'ayuda1': function( character, system, action) {
-						ayuda="Es una carta rara, ¿te dirá donde ir en algún lado?</p>"+linea;
-						system.setCharacterText( ayuda+"<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
-						No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
+						ayuda="<p>Es una carta rara, ¿te dirá donde ir en algún lado?</p>"+linea;
+						system.setCharacterText( ayuda+"<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 					}
 			}
         
@@ -240,7 +239,7 @@ undum.game.situations = {
 	    },
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="Se que estas nervios@, pero debes continuar"+linea;
+						ayuda="<p>Se que estas nervios@, pero debes continuar</p>"+linea;
 						system.setCharacterText( ayuda );
 					}
 			
@@ -252,14 +251,36 @@ undum.game.situations = {
 	"<p class = 'dialogo'>Esto no es un aviso. Es una obligación que debes de cumplir si quieres ver a tu hija alguna vez en tu vida. \
 	No sé cuándo leerás esto, pero tarde o temprano tendrás desesperación, sufrirás alucinaciones y desmayos. El tiempo corre y sobre todo tú, corre\
 	todo lo que puedas hasta encontrar esa habitación. El tiempo corre... Tú decides, el destino está en tus manos.</p> </br>\
-	<p>No, no puede ser verdad, ¿TIENE A MI HIJA? ¿LA TIENE SECUESTRADA? Pero, ¡¡¡¡¡¿por qué?!!!!! ¿Qué he hecho para <a href='situacion33'>sufrir</a> todo esto?</p>"
+	<p>No, no puede ser verdad, ¿TIENE A MI HIJA? ¿LA TIENE SECUESTRADA? Pero, ¡¡¡¡¡¿por qué?!!!!! ¿Qué he hecho para <a href='situacion33'>sufrir</a> todo esto?</p>",{
+		enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Se que estas nervios@, pero debes continuar</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 	
 	situacion33: new undum.SimpleSituation(
 	"<p>¿Se referirá a la habitación 213? ¿Por qué esa habitación exactamente? Tengo que buscarla como sea. Pero no sé todo esto no me cuadra mucho\
 	¿No es mucha casualidad que justamente sea esta habitación? ¿Qué esconderá esa tal habitación? ¿Será una habitación de la tortura? \
 	No me queda otra en ir en busca de esta habitación. Tengo que coger fuerzas e ir a rescatar a mi hija, que es lo único que importa ahora mismo. </br>\
-	Nada ni nadie me podrá parar hasta ir a por mi hija. Cojo el coraje que llevo dentro, me levanto de un impulso y me dirijo a la <a href='situacion4'>habitación 213</a>.</p>"
+	Nada ni nadie me podrá parar hasta ir a por mi hija. Cojo el coraje que llevo dentro, me levanto de un impulso y me dirijo a la <a href='situacion4'>habitación 213</a>.</p>",{
+		enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Se que estas nervios@, pero debes continuar</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 
 	situacion4: new undum.SimpleSituation (
@@ -316,7 +337,7 @@ undum.game.situations = {
 					system.setCharacterText( ayudaLink+"<p>MI HIJA</br> MI ¡HIJA!</p>" );
 				},
 				'ayuda1': function( character, system, action) {
-						ayuda="¿Quieres volver afuera?"+linea;
+						ayuda="<p>¿Quieres volver afuera?</p>"+linea;
 						system.setCharacterText(ayuda);
 					}
 			}
@@ -334,14 +355,37 @@ undum.game.situations = {
 	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
 	<p>A la derecha, otra puerta, por la que se ven unas escaleras. No dispongo de mucho tiempo, puede que me estén buscando. \
 	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>"
-          
+     ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Tu hija debe estar en algún lado, no pierdas la cabeza y buscala</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}   
     ),
         
 	situacion52: new undum.SimpleSituation(
     "<p>El Sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
 	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
-    </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>"
+    </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>",  
+	   {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Tu hija debe estar en algún lado, no pierdas la cabeza y buscala</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	   }
     ),
 	
     situacion53: new undum.SimpleSituation(
@@ -350,6 +394,18 @@ undum.game.situations = {
 	Al abrirla, el chirrido que producen las oxidadas visagras hacen saltar las ranas de sus hojas y un pequeño grupo de pájaros alza el vuelo con sorpresa.\
 	Me acerco a lo que parece ser una gran enredadera. Tiene una forma un tanto peculiar, es como si hubiese abrazado algo en su interior.\<p>Voy a <a href='situacion54' class='once'>ver qué hay ahí dentro</a> o mejor <a href='situacion55' class='once'>no tocar nada</a>, tengo que darme prisa.</p>\
      </p>"
+	 ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Tu hija debe estar en algún lado, no pierdas la cabeza y buscala, sigue adelante</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	 }
         
     ),
     
@@ -372,13 +428,36 @@ undum.game.situations = {
         }
     ),
     situacion55: new undum.SimpleSituation(
-    "<p>En el patio hay 3 puertas más, todas están cerradas, no tengo más remedio que <a href='presituacion' class='once'>volver por las escaleras</a></p>"
+    "<p>En el patio hay 3 puertas más, todas están cerradas, no tengo más remedio que <a href='presituacion' class='once'>volver por las escaleras</a></p>", 
+	   {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>no es momento de irse</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	 }
     ),
 
 	presituacion: new undum.SimpleSituation(
 	"<p>Continuo mi trayecto por las escaleras hasta que veo algo que me causó fatiga. UNA NOTA.</br>\
 	Junto a esta nota, había 2 objetos muy parecidos entre sí, enganchados por una serie de engranajes y cuerdas. Me daba bastante miedo. No sabía muy bien si era una trampa \
-	pero me dispuse a <a href='nota'>leer la nota</a>.  </p>"
+	pero me dispuse a <a href='nota'>leer la nota</a>.  </p>" ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Leer las notas es algo bueno</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 	
 	nota: new undum.SimpleSituation(
@@ -389,14 +468,36 @@ undum.game.situations = {
 	¿Ahora, que es lo más importante para ti? ¿Todo lo que has tenido en tu vida o la vida en si? ¿Vivir o  morir? <Esa es la cuestión. \
 	El primer objeto es un cuchillo que puede que te sirva a lo largo del recorrido y el otro objeto es un documento que falsificaste en la empresa con tal de que no fuera a la quiebra \
 	y solo pensar en dinero y engañar a las personas. Con estos objetos puedes ir a la cárcel.</p>  <p class='dialogo'>... Asi que elige bien... o sino.. Morirás. Si eliges bien, te veré pronto. El tiempo sigue corriendo. </p> \
-	<p><a href='eleccionq'>Tú tienes la última palabra</a> </p>"
+	<p><a href='eleccionq'>Tú tienes la última palabra</a> </p>" ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿La nota tendra un lugar donde ir?</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 	
 	eleccionq: new undum.SimpleSituation(
 	"<p>No puede ser... Este documento puede implicarme la ruina para todo el mundo... ¿Por qué hice eso? el ser humano es corruptible... No tengo tiempo para discursos filosóficos \
 	Mi hija está secuestrada y yo aquí decidiendo... Pero ¿Qué es mejor, que coja este documento para salvar mi vida o con este documento si lo dejo me arruinará la vida? Creo que ahora mismo \
 	todo me abruma. Si cogo el cuchillo, podre salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opcion incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
-	),
+	 ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Serán todos los objetos útiles?</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	 }),
 	
 
 	cuchillo: new undum.SimpleSituation(
@@ -422,14 +523,36 @@ undum.game.situations = {
 	"<p>Al coger con suavidad los documentos, veo que los engranajes se mueven de una forma extraña y solo puedo oir el ruido del cañon y caer mientras que una bala ha atravesado mi cráneo. Todo ha acabado aquí. Mi egoismo tiene la culpa de todo \
 	Nunca supe elegir bien en mi vida. Espero encontrarte en alguna parte Thalia. Te quiero</p> </br> \
 	<h1>FIN</h1> </br>\
-	<p><a href='eleccionqu'>Volver a intentarlo</a></p>"
+	<p><a href='eleccionqu'>Volver a intentarlo</a></p>" ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>No desesperes e intentalo</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 	
 	eleccionqu: new undum.SimpleSituation(
 	"<p>No puede ser... Este documento puede implicarme la ruina para todo el mundo... ¿Por qué hice eso? el ser humano es corruptible... No tengo tiempo para discursos filosóficos \
 	Mi hija está secuestrada y yo aquí decidiendo... Pero ¿Qué es mejor, que coja este documento para salvar mi vida o con este documento si lo dejo me arruinará la vida? Creo que ahora mismo \
 	todo me abruma. Si cogo el cuchillo, podre salvar mi vida y sin coger el documento puede que sea la mayor ruina pero los cañones me apuntan y solo sufro un pequeño grito por si elijo la opcion incorrecta. <a href='cuchillo'>Cuchillo</a> o <a href='documento'>Documento</a></p>"
-	),
+	 ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>El cuchillo puede que te sirva de utilidad a lo largo de la historia...</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	 }),
 	
 
 	situacion6: new undum.SimpleSituation(
@@ -437,7 +560,18 @@ undum.game.situations = {
 	<p>De una vez todo deja de dar vueltas, me cuesta seguir en línea recta pero no dejo de avanzar. Esto no puede seguir así, \
 	debería intentar mantener mi mente ocupada. Quizá <a href='hablar'>hablar en voz alta</a> me ayude a mantener la cordura; o algo \
 	tan simple como <a href='cantar'>tararear una canción</a>, la que sea… (<a href='ignorar'>No hacer nada</a>)</p>"
-	),
+	,   {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Te oirá alguien?</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}),
 	
 
 	hablar:  new undum.SimpleSituation(
@@ -446,7 +580,18 @@ undum.game.situations = {
 	como solo un mal sueño. Sí, -afirmo mientras empiezan a brotar lágrimas de mis ojos- una simple pesadilla. Por favor Thalia, espero que estés sana y sal- \
 	-¿M-mami? </p>\
 	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! \
-	Espera, esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
+	Espera, esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>" ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Te oirá alguien?</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}
+	}
 	),
 
 	cantar: new undum.SimpleSituation(
@@ -455,7 +600,17 @@ undum.game.situations = {
 	-¿Mami? ¿Mamá? </p>\
 	<p>Freno en seco, mirando hacia el habitáculo cerrado del que parecía provenir el sonido. ¡¿Qué?! ¿He escuchado bien? ¡Oh no, otra vez no! Espera, \
 	esta vez no hay ruidos extraños ni destellos violentos.. ¿Debería <a href='investigar'>investigar la habitación</a> o <a href='ignorar'>ignorar el ruido</a>?</p>"
-	),
+	 ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Te oirá alguien?</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	 }}),
 
 	investigar: new undum.SimpleSituation(
 	"<p>Me acerco en silencio y con cuidado a la puerta cerrada. Se escuchan sollozos de fondo, ¿podrá ser..?</p> \
@@ -522,7 +677,17 @@ undum.game.situations = {
 		Pero... No todo queda ahi. En el fondo sabía que nadie por amor al arte me iba a dejar a encerrada por la nada, ni para hacerme daño... Sigo pensando en mi pasado, en el cuchillo o en el documento de antes... \
 		Cojo en brazos a mi hija para poder ir mas rápido, y poder encontrar una salida, como objetivo de esto. Sabía que si antes había tenido una trampa, ¿Por qué no iba a tenerla otra vez? \
 		Cojo aire continuo mi camino por el <a href='pasillopuzzle'>pasillo</a>. </p>"
-    ),
+     ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Ya queda solo salir</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	 }}),
 	
 	pasillopuzzle: new undum.SimpleSituation(
 		"<p>Siempre me muevo por los pasillos, por que son clave para encontrar alguna salida. Pero hubo algo que captó mi atención. Llevaba en brazos a Thalia pero me detuve poco a poco \
@@ -541,11 +706,31 @@ undum.game.situations = {
 		</br>\
 		<a href='eleccion'>Continuar</a> </p>"
 
-	),
+	 ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Ya queda solo salir</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	 }}),
 	
 	eleccion: new undum.SimpleSituation(
 		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
-		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>?  ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>?  ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ " ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Todo puede ser útil en algún momento</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}}
 	),
 	
 	
@@ -572,12 +757,32 @@ undum.game.situations = {
 	"<p>Al coger con suavidad los documentos, veo que hay debajo un hueco con algo extraño, la granada. Con un hijo sostenía los documentos pero nada puro parar aquello.  \
 	Nunca supe elegir bien en mi vida. Espero encontrarte en alguna parte Thalia. Te quiero</p> </br> \
 	<h1>FIN</h1> </br>\
-	<p><a href='intento'>Volver a intentarlo</a></p>"
+	<p><a href='intento'>Volver a intentarlo</a></p>" ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Que ocurrió, prueba de nuevo a ver si lo logras</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}
 	),
 	
 	intento: new undum.SimpleSituation(
 		"<p> No podía creerme lo que estaba viendo, estaba claro que si cogía esos documentos para destruirlos iba a acabar con nosotras, pero, ¿he de pensar ahora mismo en vivir o en el furuto nuestro? \
-		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>? ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ "
+		¿<a href='boligrafo'>boligrafo</a> o <a href='doc'>documento</a>? ¿Por qué un boligrafo? ¿Acaso voy a firmar algo más adelante en esta mierda de sitio? </p>\ " ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Todo puede ser útil en su momento</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+		}}
 	),
 	
 
@@ -588,39 +793,109 @@ undum.game.situations = {
 		jugar a un juego Thalia, vamos a ir abriendo puertas y tú vas contando cuántas llevamos abiertas, ¿si?</p>\
 		No se ha dado cuenta, pero la puerta está con una cadena, no podemos salir por ahí si no encuentro con qué romperla...\
 		<p class='dialogo'> ¿Por qué lado quieres empezar Thalia? ¿<a href='situacion71'>izquierda</a> o <a href='situacion71'>derecha</a>?</p>"
-    ),
+     ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	 }}),
     
     situacion71: new undum.SimpleSituation(
 		"<p class='transient'>Abro la puerta en silencio. Tal y como pensaba, solo hay una cama desvencijada y un escuálido escritorio bajo una ventana tapiada.\
 		<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion712'>mirar la siguiente habitación</a>,\
 		¿ o <a href='situacion712'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     
     situacion712: new undum.SimpleSituation(
 		"<p class='transient'>Me dirijo hacia la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\
 		<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion713'>mirar la siguiente habitación</a>,\
 		¿o <a href='situacion713' class='once'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion713: new undum.SimpleSituation(
 		"<p class='transient'>Voy a la siguiente habitación. Es una reproducción de la anterior, no cambia nada.\
 		<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion714'>mirar la siguiente habitación</a>,\
 		¿Y si <a href='situacion712'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion714: new undum.SimpleSituation(
 		"<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Es exactamente una reproducción de la anterior, no cambia nada a lo que llevamos visto.\
 		<p class='dialogo transient'>Bueno, lo hemos intentado, deberíamos <a href='situacion715'>mirar la siguiente habitación</a>,\
 		¿o <a href='situacion713'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion715: new undum.SimpleSituation(
 		"<p class='transient'>Me adentro en la siguiente habitación. Abro la puerta de un golpe. Es igual que la otra, no cambia nada.\
 		<p class='dialogo transient'>Maldita sea, aquí tampoco, deberíamos <a href='situacion716'>mirar en otra habitación</a>,\
 		¿o <a href='situacion714'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion716: new undum.SimpleSituation(
 		"<p class='transient'>Me lanzo a la siguiente habitación. Abro la puerta de un golpe. Es una reproducción de la anterior, no cambia nada.\
 		<p class='dialogo transient'>¿Por dónde vamos Thalia? deberíamos <a href='situacion717'>ir a la siguiente habitación</a>,\
 		¿o <a href='situacion715'>miramos al otro lado</a>?</p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion717: new undum.SimpleSituation(
 		"<p class='transient'>Abro la siguiente puerta de un golpe. Es una reproducción de la anterior. Thalia está señalando <a href='./navaja' class='once'>algo</a> encima del escritorio.\
 		<p class='dialogo transient'>Vamos a <a href='situacion718'>mirar la siguiente habitación</a>,\
@@ -645,10 +920,30 @@ undum.game.situations = {
 		"<p class='transient'>Corro a la siguiente habitación. Abro la puerta de un golpe. Estoy de los nervios. Todas las habitaciones son iguales.\
 		<p class='dialogo transient'>Démonos prisa, ¿<a href='situacion719'>miramos la siguiente habitación</a>?,\
 		¿o <a href='situacion719'> echamos un vistazo al otro lado</a>?</p></p>" 
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion719: new undum.SimpleSituation(
 		"<p><p class='dialogo'>Por fin.<a href='situacion72'>Aquí</a> está. </p></p>"
-    ),
+    ,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Continua siempre, todo depende de tu lado más favorable</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     situacion72: new undum.SimpleSituation(
 		"<p>Una cama rota. Sí. Con esa <a href='./barra' class='once'>barra de metal</a> podríamos forzar la puerta y <a href='situacion8'>salir de aquí</a>. </p>",
         {
@@ -675,7 +970,17 @@ undum.game.situations = {
 		Conseguimos abrir la puerta del todo. Es un lugar totalmente desconocido en el que nunca podría haberme imaginado. Ahora toda correr a toda velocidad\
 		con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mío...</p>\
 		<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p>"
-	),
+	,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>¿Siempre hay notas?, algo deberán tener</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
     
 
 	situacion81: new undum.SimpleSituation(
@@ -685,7 +990,17 @@ undum.game.situations = {
 		<p>Una rabia creció dentro de mí que hizo que derramase una lágrima en mi rostro. Creo que solo me quedan fuerzas para correr con mi hija y dejar todo esto atrás.</p></br>\
 		<p class='dialogo'>-Te quiero Thalia, nunca te separes de mí.</p> </br>\
 		<h1>FIN</h1>"
-	),
+	,  {
+		 enter: function(character,system,to){
+			system.setCharacterText(ayudaLink);	
+	    },
+	actions: {
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>GRACIAS POR VIDEOJUGAR</p>"+linea;
+						system.setCharacterText( ayuda );
+					}
+			
+	}}),
 };
 
 // Ejemplo de declaraciÃ³n separada
