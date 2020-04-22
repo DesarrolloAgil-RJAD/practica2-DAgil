@@ -104,15 +104,18 @@ undum.game.situations = {
 				if(character.qualities.llave==1){
 					system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
 									<a href='situacion14'>Volver a mirar por la habitación</a> o <a href='situacion2'>probar la llave</a> que he encontrado antes. </p>" );	
+					system.setCharacterText(ayudaLink);
 				}else{
 					system.write( "<p>Me acerco tambaleándome a la puerta, solo para descubrir que no se mueve ni un milímetro, está cerrada con llave. \
 									<a href='situacion14'>Volver a mirar por la habitación</a></p>" );	
+					
+					system.setCharacterText(ayudaLink);
 				}
 			},
 			actions: {
 					'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>¿Qué crees que habrá detrás de la puerta?</p>"+linea;
+						system.setCharacterText(ayuda);
 					}				
 			}			
 		}
@@ -214,10 +217,11 @@ undum.game.situations = {
 			},
 			'nota': function (character, system, action){
 					system.setQuality('nota',1);
-					system.setCharacterText("<p>Esta nota está metida en un <a href='situacion31' class='once'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
-			},'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+					system.setCharacterText(ayudaLink+"<p>Esta nota está metida en un <a href='situacion31' class='once'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
+			},
+			'ayuda1': function( character, system, action) {
+						ayuda="<p>Debes estar atento al suelo y a todas las cosas que te encuentres en el suelo</p>"+linea;
+						system.setCharacterText( ayuda+"<p>Esta nota está metida en un <a href='situacion31' class='once'>sobre</a>...Espera un momento, TIENE MI NOMBRE POR LA PARTE DE DETRÁS</p>");
 					}
 		}
 	}
@@ -354,12 +358,12 @@ undum.game.situations = {
                             function( character, system, action) {
                             system.setQuality('colgante',1);	
                             system.setQuality('puntos', character.qualities.puntos+1 );
-                            system.setCharacterText( "<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás:</br> 'A.D.R. Hab. 213.' </br> Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
+                            system.setCharacterText(ayudaLink+"<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás:</br> 'A.D.R. Hab. 213.' </br> Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
                           
                 },
 				'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>¿No puede ser que el colgante sea de su hija?</p>"+linea;
+						system.setCharacterText(ayuda+"<p>¡Es un colgante! Tiene una foto muy descolorida, apenas se distingue. Tiene un grabado en la parte de atrás:</br> 'A.D.R. Hab. 213.' </br> Bueno, pensé que habría algo de mayor utilidad. Miraré qué más puedo <a href='situacion55' class='once'>encontrar</a></p>" );
 					}
             }
         }
@@ -397,12 +401,13 @@ undum.game.situations = {
 	y no me encuentro nada bien. Espero encontrar a mi hija porque creo que cada vez estoy más cerca de encontrarla. Espero. </p>"
 	,{
 		enter: function(character,system,to){
-			system.setQuality('cuchillo',1);	
+			system.setQuality('cuchillo',1);
+			system.setCharacterText(ayudaLink);
 		},
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>El cuchillo puede que te sirva de utilidad a lo largo de la historia...</p>"+linea;
+						system.setCharacterText(ayuda);
 					}
 			
 		}
@@ -644,10 +649,11 @@ undum.game.situations = {
         {
 			actions: {
 			'barra': function( character, system, action) {
-					system.setQuality('barra',1);		
+					system.setQuality('barra',1);
+					system.setCharacterText(ayudaLink);
 			},'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>La barra de metal es muy buena idea para forzar la puerta</p>"+linea;
+						system.setCharacterText(ayuda);
 					}
 		}
     }
