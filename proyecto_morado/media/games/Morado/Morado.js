@@ -73,11 +73,12 @@ undum.game.situations = {
 		{
 			actions: {
 					'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>¿Que buscarías para irte?</p>"+linea;
+						system.setCharacterText( ayuda+"<p>Tengo miedo de lo que me pueda \
+						llegar a encontrar. No es habitual amanecer (¡O atardecer!) en un sitio desconocido. </p>" );
 					},
 					'lugar': function( character, system, action) {
-						system.setCharacterText( "<p>Tengo miedo de lo que me pueda \
+						system.setCharacterText( ayudaLink+"<p>Tengo miedo de lo que me pueda \
 						llegar a encontrar. No es habitual amanecer (¡O atardecer!) en un sitio desconocido. </p>" );
 						system.setQuality('puntos', character.qualities.puntos+1 );
 					}
@@ -128,11 +129,12 @@ undum.game.situations = {
 		{
 			enter: function(character,system,to){
 				system.setQuality('llave',1);	
+				system.setCharacterText( ayudaLink);
 			}  ,
 			actions: {
 					'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>Ya tienes lo que necesitabas</p>"+linea;
+						system.setCharacterText( ayuda);
 					}				
 			}	 
 		}
@@ -151,12 +153,12 @@ undum.game.situations = {
 			}, 
 			actions: {
 				'rapido': function( character, system, action) {
-						system.setCharacterText("<p>Debo hacer algo, no sé si ha sido buena idea ir más rápido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
+						system.setCharacterText(ayudaLink+"<p>Debo hacer algo, no sé si ha sido buena idea ir más rápido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>");
 						system.setQuality('puntos', character.qualities.puntos+1 );
 
 				},'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>¿quiero ir rapido?</p>"+linea;
+						system.setCharacterText( ayuda+"<p>Debo hacer algo, no sé si ha sido buena idea ir más rápido... Creo que lo mejor es ir <a href='situacion21' class='once'>despacio</a> </p>" );
 					}
 				
 			}
@@ -171,12 +173,12 @@ undum.game.situations = {
 		cuando yo realmente me dedico al tema empresarial de marketing. </p>",
 		{
 			enter: function(character,system,to){
-				system.setCharacterText("");	
+				system.setCharacterText(ayudaLink);	
 			}   ,
 			actions: {
 				'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>Cotinua!</p>"+linea;
+						system.setCharacterText( ayuda);
 					}				
 			}
 		}
@@ -191,12 +193,13 @@ undum.game.situations = {
 			actions: {
 				'carta': function( character, system, action) {
 						system.setQuality('carta',1);
-						system.setCharacterText( "<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
+						system.setCharacterText( ayudaLink+"<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
 						No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 				},
 				'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="Es una carta rara, ¿te dirá donde ir en algún lado?</p>"+linea;
+						system.setCharacterText( ayuda+"<p> El contenido de la carta es difícilmente legible '... habitación... escuchó que... clausurar... ilegal... escapar...'\
+						No se entiende muy bien. Solo está clara la firma. Pone el número de habitación:<a href='situacion3' class='once'> 213</a>. Veamos si encuentro algo de utilidad</p>" );
 					}
 			}
         
@@ -233,12 +236,12 @@ undum.game.situations = {
 	,
 	{
 		enter: function(character,system,to){
-			system.setCharacterText("");	
+			system.setCharacterText(ayudaLink);	
 	    },
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="Se que estas nervios@, pero debes continuar"+linea;
+						system.setCharacterText( ayuda );
 					}
 			
 		}
@@ -278,43 +281,43 @@ undum.game.situations = {
 	  {
 	      actions: {
                 'uno': function( character, system, action) {
-					system.setCharacterText("<p>Debo hacer algo</p>");
+					system.setCharacterText(ayudaLink+"<p>Debo hacer algo</p>");
 					system.setQuality('puntos', character.qualities.puntos+1 );
 
 				},
 				'dos': function( character, system, action) {
-					system.setCharacterText("<p></p>");
+					system.setCharacterText(ayudaLink);
 				},
 				'tres': function( character, system, action) {
-					system.setCharacterText( "<p></p>" );
+					system.setCharacterText(ayudaLink);
 				},
 				'cuatro': function( character, system, action) {
-					system.setCharacterText( "<p>No me gusta el ruido</p>" );
+					system.setCharacterText(ayudaLink+ "<p>No me gusta el ruido</p>" );
 				},
 				'cinco': function( character, system, action) {
-					system.setCharacterText( "<p></p>" );
+					system.setCharacterText( ayudaLink );
 				},
 				'seis': function( character, system, action) {
-					system.setCharacterText( "<p></p>" );
+					system.setCharacterText( ayudaLink );
 				},
 				'siete': function( character, system, action) {
-					system.setCharacterText( "<p>A mí me gusta el morado</p>" );
+					system.setCharacterText(ayudaLink+ "<p>A mí me gusta el morado</p>" );
 				},
 				'ocho': function( character, system, action) {
-					system.setCharacterText( "<p>¿está?¿donde?</p>" );
+					system.setCharacterText( ayudaLink+"<p>¿está?¿donde?</p>" );
 				},
 				'nueve': function( character, system, action) {
-					system.setCharacterText( "<p><a class='once' href='situacion5'>¿La salida?</a></p>" );
+					system.setCharacterText( ayudaLink+"<p><a class='once' href='situacion5'>¿La salida?</a></p>" );
 				},
 				'diez': function( character, system, action) {
-					system.setCharacterText( "<p></p>" );
+					system.setCharacterText( ayudaLink );
 				},
 				'once': function( character, system, action) {
-					system.setCharacterText( "<p>MI HIJA</br> MI ¡HIJA!</p>" );
+					system.setCharacterText( ayudaLink+"<p>MI HIJA</br> MI ¡HIJA!</p>" );
 				},
 				'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="¿Quieres volver afuera?"+linea;
+						system.setCharacterText(ayuda);
 					}
 			}
 	    }   
@@ -472,12 +475,12 @@ undum.game.situations = {
 	{
 	    enter: function(character,system,to){
 			system.setQuality('hija',1);	
-        
+			system.setCharacterText( ayudaLink);
 	    },
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>La has encontrado y esta bien, es hora de irse</p>"+linea;
+						system.setCharacterText( ayuda);
 					}
 			
 		}
@@ -499,12 +502,13 @@ undum.game.situations = {
 	<p>Después de abrazarnos un poco más, me pongo de pie y cojo a Thalia de la mano. Estamos más que preparadas para <a href='prepuzzle'>continuar</a>.</p>",
 	{
 	    enter: function(character,system,to){
-			system.setQuality('hija',1);	
+			system.setQuality('hija',1);
+			system.setCharacterText( ayudaLink);			
 	    }  ,
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>La has encontrado y esta bien, es hora de irse</p>"+linea;
+						system.setCharacterText( ayuda);
 					}
 			
 		} 
@@ -551,12 +555,13 @@ undum.game.situations = {
 	y no me encuentro nada bien. Ojalá y sea esto la última prueba que superar, si a esto se le puede llamar prueba. </p>"
 	,{
 		enter: function(character,system,to){
-			system.setQuality('boligrafo',1);	
+			system.setQuality('boligrafo',1);
+			system.setCharacterText( ayudaLink);
 		},
 		actions: {
 			'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>Todo puede ser útil en algún momento</p>"+linea;
+						system.setCharacterText( ayuda);
 					}
 			
 		}
@@ -626,11 +631,11 @@ undum.game.situations = {
                             function( character, system, action) {
                             system.setQuality('navaja',1);	
                             system.setQuality('puntos', character.qualities.puntos+1 );
-                            system.setCharacterText( "<p> Parece ser una navaja vieja, aunque no está demasiado oxidada, la guardaré por si me es útil</p>" );
+                            system.setCharacterText( ayudaLink+"<p> Parece ser una navaja vieja, aunque no está demasiado oxidada, la guardaré por si me es útil</p>" );
                           
                 },'ayuda1': function( character, system, action) {
-						ayuda="<p>Comienza tu aventura!</p>"+linea;
-						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						ayuda="<p>Ya debe quedar poco para salir</p>"+linea;
+						system.setCharacterText( ayuda+"<p> Parece ser una navaja vieja, aunque no está demasiado oxidada, la guardaré por si me es útil</p>" );
 					}
             }
         }
