@@ -69,7 +69,8 @@ undum.game.situations = {
 		Desconcertada, me siento en la cama mientras intento mirar a mi alrededor, hay luces moradas en todas las paredes, tan brillantes que \
 		casi ocultan el deterioro de los azulejos. Me siento muy mareada, pero no es momento para descansar, al contrario, aún no sé \
 		si mi hija Thalia, está a salvo. Tan pronto como pienso en ponerme de pie, me doy cuenta de que mi brazo izquierdo está esposado \
-		a la cama, la cadena parece bastante oxidada, podría <a href='situacion12'>intentar romperla</a> de un tirón o <a href='situacion11'>buscar la llave</a> si por suerte está en la cama.<\p> ",
+		a la cama, la cadena parece bastante oxidada, podría <a href='situacion12'>intentar romperla</a> de un tirón o <a href='situacion11'>buscar la llave</a> si por suerte está en la cama.</p>\
+		</br><img src='media/img/fotosMorado/Morado--1.jpg' align='left' class='img-situation'></img></br> ",
 		{
 			actions: {
 					'ayuda1': function( character, system, action) {
@@ -150,7 +151,8 @@ undum.game.situations = {
 		preguntas que me planteo a cada minuto. Ni un rastro ni prueba de nada... ¿Y si son pruebas que me están poniendo y tengo que resolverlas?\
 		No sé... Aún no estoy asimilando lo que me está pasando y es lo que más miedo me da. </br>\
 		¿Esto es algo seguro? Mi pie descalzo anda con desconfianza y miedo. Pero no debo perder la conciencia ni la fuerza que me empuja a seguir intentándolo. </br>\
-		No sé si debería estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p>",
+		No sé si debería estar andando <a href='./rapido' class='once' >deprisa</a> o ir <a href='situacion21'>despacio</a> por todo lo que se puede venir encima... </p> \
+		</br><img src='media/img/fotosMorado/Morado--2.jpg' align='left' class='img-situation'></img></br>",
 		{
 			enter: function(character,system,to){
 				system.setQuality('llave',0);	
@@ -215,7 +217,8 @@ undum.game.situations = {
 	la palabra clave que me ha llamado la atención ha sido escapar. Eso es lo que ahora necesito yo. ESCAPAR. </br>\
 	Pero, ¿Adónde voy, si ni siquiera se dónde estoy? Este sitio no me suena, quién sabe, puede ser que esté hasta en el extranjero.\
 	Por un momento me ahogo en mis lágrimas buscando una habitación que no tiene sentido por una carta al azar que he cogido. </br>\
-	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota'>nota</a>. </p>",
+	Paso por el pasillo y encuentro una <a href='./botella' class='once'>botella</a> de agua en el suelo, junto a esta botella hay escrita una <a href='./nota'>nota</a>. </p> \
+	</br><img src='media/img/fotosMorado/Morado--3.jpg' align='left' class='img-situation'></img></br>",
 	{
 		actions: {
 			'botella': function(character, system, action){
@@ -302,6 +305,7 @@ undum.game.situations = {
 	<a class='once' href='./siete'>quiero irme a casa</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./ocho'>no quiero esto</a>\
 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp\
 	<a href='./nueve'>quiero volver</a></br> <a class='once' href='./diez'>no quiero que me hagan nada</a></p></br>\
+	<img src='media/img/fotosMorado/Morado--4.jpg' align='left' class='img-situation'></img></br>\
 	<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class='once' href='./once'>¿Dónde está Thalia?</a></p></div>",
 	  {
 	      actions: {
@@ -358,7 +362,8 @@ undum.game.situations = {
 	En esta sala hay algunas ventanas rotas, las han tapado con tablas. Pero hay rendijas, podría <a href='situacion52'>mirar al exterior</a>. \
 	También hay una puerta doble a la izquierda con una mortecina luz verde parpadeante: <p class='dialogo'> 'Salida de Emergencia' </p>\
 	<p>A la derecha, otra puerta, por la que se ven unas escaleras. No dispongo de mucho tiempo, puede que me estén buscando. \
-	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>"
+	<p class='transient'><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>\
+	</br><img src='media/img/fotosMorado/Morado--5.jpg' align='left' class='img-situation'></img></br>"
      ,  {
 		 enter: function(character,system,to){
 			system.setCharacterText(ayudaLink);	
@@ -376,7 +381,8 @@ undum.game.situations = {
 	situacion52: new undum.SimpleSituation(
     "<p>El Sol me ciega por un momento y cuando vislumbro lo que me rodea solo alcanzo a ver ventanas. Todas ellas también cerradas,\
 	rodeando un patio interior. Es un jardín, cuadrado, con una fuente en medio llena de agua estancada y ranas saltando de un lado a otro. \
-	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un árbol y empieza el siguiente.\
+	La vegetación es tan frondosa debido al abandono que no se puede apreciar dónde acaba un arbusto y empieza el siguiente.\
+	</br><img src='media/img/fotosMorado/Morado--ex.jpg' align='left' class='img-situation'></img></br>\
     </br>\ <p><a href='situacion53'>Saldré por la primera puerta</a> o quizás debería volver a subir por esas <a href='presituacion'>escaleras</a>.</p>",  
 	   {
 		 enter: function(character,system,to){
@@ -563,7 +569,8 @@ undum.game.situations = {
 	"<h1>ENCUENTRO INESPERADO</h1> \
 	<p>De una vez todo deja de dar vueltas, me cuesta seguir en línea recta pero no dejo de avanzar. Esto no puede seguir así, \
 	debería intentar mantener mi mente ocupada. Quizá <a href='hablar'>hablar en voz alta</a> me ayude a mantener la cordura; o algo \
-	tan simple como <a href='cantar'>tararear una canción</a>, la que sea… (<a href='ignorar'>No hacer nada</a>)</p>"
+	tan simple como <a href='cantar'>tararear una canción</a>, la que sea… (<a href='ignorar'>No hacer nada</a>)</p> \
+	</br><img src='media/img/fotosMorado/Morado--6.jpg' align='left' class='img-situation'></img></br>"
 	,   {
 		 enter: function(character,system,to){
 			system.setCharacterText(ayudaLink);	
@@ -677,10 +684,10 @@ undum.game.situations = {
 	
 	prepuzzle: new undum.SimpleSituation(
 		"<p>Juntas, saldremos de esta, pero debemos permanecer unidas ante esta extraña situación. Sigo recordando cosas de mi pasado que sean todos las causas \
-		de porque estoy aqui. Aprieto fuerte la mano de mi hija y le susurro al oido que la quiero muchisimo y no iba a permitir que nada ni nadie le iba a hacer daño.\
-		Pero... No todo queda ahi. En el fondo sabía que nadie por amor al arte me iba a dejar a encerrada por la nada, ni para hacerme daño... Sigo pensando en mi pasado, en el cuchillo o en el documento de antes... \
+		de porque estoy aquí. Aprieto fuerte la mano de mi hija y le susurro al oído que la quiero muchísimo y no iba a permitir que nada ni nadie le iba a hacer daño.\
+		Pero... No todo queda ahí. En el fondo sabía que nadie por amor al arte me iba a dejar a encerrada por la nada, ni para hacerme daño... Sigo pensando en mi pasado, en el cuchillo o en el documento de antes... \
 		Cojo en brazos a mi hija para poder ir mas rápido, y poder encontrar una salida, como objetivo de esto. Sabía que si antes había tenido una trampa, ¿Por qué no iba a tenerla otra vez? \
-		Cojo aire continuo mi camino por el <a href='pasillopuzzle'>pasillo</a>. </p>"
+		Cojo aire continúo mi camino por el <a href='pasillopuzzle'>pasillo</a>. </p>"
      ,  {
 		 enter: function(character,system,to){
 			system.setCharacterText(ayudaLink);	
@@ -695,12 +702,12 @@ undum.game.situations = {
 	
 	pasillopuzzle: new undum.SimpleSituation(
 		"<p>Siempre me muevo por los pasillos, por que son clave para encontrar alguna salida. Pero hubo algo que captó mi atención. Llevaba en brazos a Thalia pero me detuve poco a poco \
-		y la solte en el suelo para asimilarlo. Había un cartel luminoso con una flecha para seguir hacia adelante. La flecha llevaba hacia una habitación con llave, esta llave estaba en el suelo y otra nota al lado. \
+		y la solté en el suelo para asimilarlo. Había un cartel luminoso con una flecha para seguir hacia adelante. La flecha llevaba hacia una habitación con llave, esta llave estaba en el suelo y otra nota al lado. \
 		Las notas eran algo ya normal en este sitio... - Pensé. La nota ponía lo siguiente: </p>\
 		</br>\
 		<p class='dialogo'>Abre la puerta y me encontrarás.</p>\
 		<p>Cogí la llave y abrí la puerta con cuidado. La habitación estaba iluminada del color habitual de este sitio: morado. \
-		Entramos a la situación y le dije a mi hija que tuviera cuidado, que no tocara nada. Habia otra nota en el suelo con 2 objetos un poco peculiares... Esta historia me suena... </p>\
+		Entramos a la habitación y le dije a mi hija que tuviera cuidado, que no tocara nada. Habia otra nota en el suelo con 2 objetos un poco peculiares... Esta historia me suena... </p>\
 		</br>\
 		<p class='dialogo'>Bienvenidas a vuestro juego, no es de disfrute para mí tener que realizar todo esto para que aprendas la lección o valores lo que es la vida un poco más. \
 		Siento por meter a tu hija en todo esto, ya que ella no tiene la culpa de nada... Pobrecita, en fín. Te estuve vigilando cuando estafaste a una empresa por puro marketing en beneficio para la empresa que trabajabas, \
@@ -796,7 +803,9 @@ undum.game.situations = {
 		hay una de esas puertas con un cartel verde indicando la salida de emergencia. No entiendo cómo la gente puede orientarse en estos lugares.\ <p class='dialogo'>Vamos a \
 		jugar a un juego Thalia, vamos a ir abriendo puertas y tú vas contando cuántas llevamos abiertas, ¿si?</p>\
 		No se ha dado cuenta, pero la puerta está con una cadena, no podemos salir por ahí si no encuentro con qué romperla...\
-		<p class='dialogo'> ¿Por qué lado quieres empezar Thalia? ¿<a href='situacion71'>izquierda</a> o <a href='situacion71'>derecha</a>?</p>"
+		</br><img src='media/img/fotosMorado/Morado--7a.jpg' align='left' class='img-situation'></img></br>\
+		<p class='dialogo'> ¿Por qué lado quieres empezar Thalia? ¿<a href='situacion71'>izquierda</a> o <a href='situacion71'>derecha</a>?</p> \
+		</br><img src='media/img/fotosMorado/Morado--7b.jpg' align='left' class='img-situation'></img></br> "
      ,  {
 		 enter: function(character,system,to){
 			system.setCharacterText(ayudaLink);	
@@ -973,7 +982,8 @@ undum.game.situations = {
 		¿Denunciar a la policía? ¿Qué pruebas tenemos? ¿O es mejor olvidarlo todo y hacer como si no ha pasado nada? </br>\
 		Conseguimos abrir la puerta del todo. Es un lugar totalmente desconocido en el que nunca podría haberme imaginado. Ahora toda correr a toda velocidad\
 		con mi hija y todo pasará... Espera... Hay otra nota en el suelo que pone el nombre de mi hija y el mío...</p>\
-		<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p>"
+		<p class='dialogo'>-No puede ser verdad... <a href='situacion81'>Otra nota</a> ¿QUÉ ES LO QUE QUIERE AHORA DE NOSOTRAS?</p> \
+		</br><img src='media/img/fotosMorado/Morado--8.jpg' align='left' class='img-situation'></img></br>"
 	,  {
 		 enter: function(character,system,to){
 			system.setCharacterText(ayudaLink);	
