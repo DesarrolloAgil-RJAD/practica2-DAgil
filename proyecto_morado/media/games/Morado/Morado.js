@@ -8,7 +8,7 @@
  * but you can use anything that is guaranteed unique (a URL you own,
  * or a variation on your email address, for example). */
 undum.game.id = "be1c95b9-cbc7-48c6-8e6a-89837aa9113e";
-
+let ayuda="<p></p>";
 /* A string indicating what version of the game this is. Versions are
  * used to control saved-games. If you change the content of a game,
  * the saved games are unlikely to work. Changing this version number
@@ -47,7 +47,7 @@ undum.game.situations = {
 		{
 			actions: {
 					'pensamiento1': function( character, system, action) {
-						system.setCharacterText( "<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+						system.setCharacterText( ayuda+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
 					}
 			}   
 		}
