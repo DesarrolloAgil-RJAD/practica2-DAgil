@@ -36,16 +36,8 @@ jQuery.fx.off=false
 undum.game.situations = {
 	
     start: new undum.SimpleSituation (
-		"<h1 class='transient'>Un color que no se olvida</h1>\
-		<p class='transient'>Caminaba con mi hija pequeña de vuelta a casa y decidimos tomar un pequeño atajo,\
-		una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
-		</br>\
-		<p class='dialogo transient'> ¿Qué hace una chica tan bonita como tú en un lugar como este? Será mejor que unos caballeros te guíen y escolten.</p>\
-		</br>\
-		<p class='transient'>Una voz masculina me habló acentuando la última palabra, no era una voz agradable. Al girarme vi como había\
-		varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar, \
-		no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
-		Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'>todo se volvió oscuro y morado</a> </p>",
+		"<p>Este juego tiene en cuenta mucho los pensamientos del personaje y dispone de su interactuación con ellos, se recomienda jugarlo en ordenador. Pero si se juega\
+		desde un dispositivo móvil recuerda revisar tus pensamientos o la ayuda si no sabes que hacer.</br> No es un sistema convencional pero queremos hacerte sentir lo que la protagonista, </br><a href='./ok' class='once'>!DISFRUTA EL JUEGO♥¡</a></p>",
 		{
 			actions: {
 					'ayuda1': function( character, system, action) {
@@ -54,6 +46,18 @@ undum.game.situations = {
 					},
 					'pensamiento1': function( character, system, action) {
 						system.setCharacterText(ayudaLink+"<p>Sólo veo luces moradas distorsionadas, no sé si son luces de neón. ¿Qué me pasa?<a href='situacion1' class='once'>¿Dónde estoy?</a> Tengo la cabeza confusa, parece que me he dado un golpe. No recuerdo nada. </p>" );
+					},
+					'ok': function( character, system, action) {
+						system.write("<h1 class='transient'>Un color que no se olvida</h1>\
+		<p class='transient'>Caminaba con mi hija pequeña de vuelta a casa y decidimos tomar un pequeño atajo,\
+		una calle poco transitada que nos ahorraba un par de semáforos que hacían esperar mucho.</p>\
+		</br>\
+		<p class='dialogo transient'> ¿Qué hace una chica tan bonita como tú en un lugar como este? Será mejor que unos caballeros te guíen y escolten.</p>\
+		</br>\
+		<p class='transient'>Una voz masculina me habló acentuando la última palabra, no era una voz agradable. Al girarme vi como había\
+		varios hombres juntos, miré al fondo de la calle y otro par había aparecido.</br> Tenía miedo de lo que pudiese pasar, \
+		no tenían buenas intenciones, pero asentí con miedo. No quería que hiciesen daño a mi hija. </br></br>\
+		Noté un fuerte dolor en la cabeza, <a href='./pensamiento1' class='once'>todo se volvió oscuro y morado</a> </p>");
 					}
 					
 			}   
