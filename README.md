@@ -213,3 +213,96 @@ Practica 2 Desarrollo Agil - Morado
 		
 	Cosas a mejorar:
 		- Realmente no existe que poder mejorar como equipo, dadas las situaciones actuales. No se ha podido medir correctamente 		   toda la situación
+		
+		
+		
+		
+>7. Sprint 3. Historias de Usuario
+    
+    Product Owner: Alberto Vicente Campos
+    
+    En esta iteración se ha tomado todo el product backlog de las historias de usuario restantes que quedaban, sabiendo aún así que también se ha realizado una valoración aproximada de las horas de trabajo basada en la dificultad estimada de las tareas derivadas de dichas historias de usuario. 
+    No se han añadido las historias de usuario que se incluyeron durante el transcurso del sprint, el primer motivo era la aparición de la pandemia mundial, que afectó al ritmo de trabajo y al método en el que se afrontaba la situación. El segundo motivo era la priorización de las personas sobre procesos, quedando así un sprint con una constancia de trabajo poco uniforme.
+
+    A continuación se presenta el aspecto y destancan los cambios tras el Product Backlog Refinement:
+    
+![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/kanbansprint3.PNG?raw=true "Sprint Backlog")
+    
+> 7.1 Sprint 3. Sprint Review.
+
+    ¿Qué se ha hecho en este Sprint?
+    
+	    Se han implementado los requisitos negociables que tenían un valor de dificultad y peso más adecuados, es decir, con una mejor relación. 
+	    Se han terminado las historias de usuario que quedaron pendientes en el sprint anterior y se han añadido las imágenes a las situaciones para dar un mejor aspecto a nuestro juego. También se ha implementado un enlace de ayuda para que el jugador pueda tener más facilidades para acabar el juego.
+	    
+	    Hemos trabajado en el marco SCRUM con un exitoso resultado. Por último indicar que el proyecto está disponible en la siguiente dirección web:
+
+	    https://moradouja.000webhostapp.com/
+
+	    La página web que propicia acceso, no solo al juego, sino a un logging donde cada usuario tiene su cuenta en:
+	    
+	    https://morado.herokuapp.com/
+	    
+	    ACLARACIÓN: En el servidor que tenemos subido el juego: herokuapp, si este da fallo, es necesario esperar unos segundos y volver a reintentarlo puesto que el servidor tiene que volver a arrancarse ya que este es gratuito. :)
+	    
+	    Aquí se presenta el Sprint Planning
+![Sprint Planning](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/tareas3.PNG?raw=true "Sprint Planning")
+
+    Estimaciones y revisión del Product Backlog. Revisión de plazos.
+    
+    	En este sprint nos ha sido un poco complicado también ajustarnos al tiempo que teníamos ya que nos ha sido complicado adaptarnos a la tecnología de JavaScript. Pero en las demás tareas que no era necesario esta tecnología, no nos ha resultado tan complicado trabajar comparado como en el primer sprint.
+    
+    Equipo. Qué ha ido bien. Problemas y soluciones.
+    	
+	- Hemos conseguido implementar la mayoría funcionalidades que hemos necesitado.
+    	- Problemas con la estética: falta de conocimientos de estilos CSS.
+	- Problema con la tecnología de JavaScript para la comunicación de Java y JavaScript (En la historia de usuario para guardar partidas ya que requería demasiado tiempo)
+	- Soluciones: Revisión de código por compañeros y búsquedas en la internet
+	
+    Demostración del incremento. 
+    
+![Product Review](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/productreview2.PNG?raw=true "Product Review")
+    
+    Orientación del siguiente Sprint. Realización de las métricas.
+    	
+	El siguiente sprint estará orientado a la realización de las métricas
+    
+    
+    
+> 7.2 Sprint 3. Sprint Retrospective.
+
+    Análisis del Sprint:
+    
+    	Personas:
+		- Buena integración y completitud del equipo por todos sus componentes. Cada vez vamos integrándonos mejor en la metodología Scrum. 
+	
+	Relaciones:
+		- Comunicación: fluida y clara. Sin problemas entre miembros del equipo.
+		- La utilización de Kanban nos resulta cada vez mas útil para nuestras relaciones de trabajo. 
+		- Pese a la situación actual, ha existido colaboración entre el equipo.
+	
+	Procesos:
+		- Daily Scrum, con un resultado regular, puesto a la gran cantidad de entregas de práticas y tareas, por tanto hemos trabajado de forma intensiva sin requerir el Daily Scrum. 
+		- Scrum Review, Scrum Retrospective, Sprint backlog Refinement
+		
+![Sprint Retrospective](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/scrumreview3.PNG?raw=true "Reunión")
+
+
+		
+	Herramientas:
+		- Desarrollo: SmartGit, NotePad++, Bloc de Notas, Brackets, Adobe Lightroom, Herokuapp
+		- Comunicativas: Telegram, Discord, Meet Hangouts, Gmail
+		- Organizativas: Kanban, Google Docs 
+		
+	        Se ha realizado un informe mediante Google Sheets para una mejor organización. Se ha utilizado:
+
+		- Distribución visual del trabajo mediante gráficos
+		- Registro del trabajo diario del equipo
+		- Ajuste minucioso entre horas dedicadas y esfuerzo estimado
+		- Mantener actualizadas y ajustadas las tareas del sprint a la capacidad de trabajo del equipo
+    
+![Sprint Retrospective](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/excel3.PNG?raw=true "Sprint Retrospective")
+		
+	Cosas a mejorar:
+		- Conocimientos de las tecnologías empleadas 
+		- Estimación de horas de trabajo
