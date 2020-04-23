@@ -226,7 +226,7 @@ Practica 2 Desarrollo Agil - Morado
 
     A continuación se presenta el aspecto y destancan los cambios tras el Product Backlog Refinement:
     
-![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/tareas3.PNG?raw=true "Sprint Backlog")
+![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/tareas4.PNG?raw=true "Sprint Backlog")
     
 > 7.1 Sprint 3. Sprint Review.
 
