@@ -261,7 +261,7 @@ Practica 2 Desarrollo Agil - Morado
 	
     Demostración del incremento. 
     
-![Product Review](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/productreview3.PNG?raw=true "Product Review")
+![Product Review](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/productreview2.PNG?raw=true "Product Review")
     
     Orientación del siguiente Sprint. Realización de las métricas.
     	
