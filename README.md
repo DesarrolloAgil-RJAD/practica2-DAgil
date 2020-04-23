@@ -226,7 +226,7 @@ Practica 2 Desarrollo Agil - Morado
 
     A continuación se presenta el aspecto y destancan los cambios tras el Product Backlog Refinement:
     
-![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/kanbansprint3.PNG?raw=true "Sprint Backlog")
+![Product Backlog](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/tareas3.PNG?raw=true "Sprint Backlog")
     
 > 7.1 Sprint 3. Sprint Review.
 
@@ -246,7 +246,7 @@ Practica 2 Desarrollo Agil - Morado
 	    ACLARACIÓN: En el servidor que tenemos subido el juego: herokuapp, si este da fallo, es necesario esperar unos segundos y volver a reintentarlo puesto que el servidor tiene que volver a arrancarse ya que este es gratuito. :)
 	    
 	    Aquí se presenta el Sprint Planning
-![Sprint Planning](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/tareas3.PNG?raw=true "Sprint Planning")
+![Sprint Planning](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/sprintbacklog3.PNG?raw=true "Sprint Planning")
 
     Estimaciones y revisión del Product Backlog. Revisión de plazos.
     
