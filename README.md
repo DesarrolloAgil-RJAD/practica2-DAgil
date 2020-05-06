@@ -332,7 +332,7 @@ Practica 2 Desarrollo Agil - Morado
 
 	Velocidad
 
-![Velocidad](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/TablaValores.PNG?raw=true "Velocidad")	
+![Velocidad](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Velocidad.PNG?raw=true "Velocidad")	
 
 	Tabla de cada Sprint
 	
