@@ -364,9 +364,19 @@ https://docs.google.com/spreadsheets/d/1jVtb6sb9cdWJIus91BilUhNaQMyTPCnZpUNI4_si
 
 >8.1 Conclusiones obtenidas de las métricas
 	
-	Para sorpresa del equipo, ha sido la primera vez que hemos utilizado Scrum o los tableros Kanban, ha sido una sorpresa agradable para el correcto reparto del trabajo. Así que nos encontramos contentos con la utilización de estas metodologías, nos han permitido tener un reparto correto y una organización sin problema.
-	En nuestro caso, durante el Sprint 1, aunque íbamos algo, "despistados" en el uso de Kanban logramos hacer un tiempo de trabajo adecuado. Una primera toma de contacto que resultó en un Sprint de trabajo sin problema, con un buen ritmo de trabajo.
-	Durante el segundo Sprint bajamos el ritmo, ya fuese al inicio por acomodarnos un poco al igual que al final del Sprint por el cambio radical que sufrió el método de trabajo y los espacios usados.
-	El tercer y más conflictivo Sprint tuvo un ritmo soprendentemente similar al primero ya que pudimos habituarnos a la nueva situación, centar un poco la mirada en el trabajo y trabajar lento pero sin pausa.
+	Para sorpresa del equipo, ha sido la primera vez que hemos utilizado Scrum o los tableros Kanban, 
+	ha sido una sorpresa agradable para el correcto reparto del trabajo. Así que nos encontramos contentos 
+	con la utilización de estas metodologías, nos han permitido tener un reparto correto y una organización sin problema.
 	
-	Aunque al final no logramos completar el 100% de los requisitos opcionales, es cierto que todos los innegociables están completos y todos aquellos opcionales que nos permitían obtener el mayor valor del producto.
+	En nuestro caso, durante el Sprint 1, aunque íbamos algo, "despistados" en el uso de Kanban logramos 
+	hacer un tiempo de trabajo adecuado. Una primera toma de contacto que resultó en un Sprint de trabajo 
+	sin problema, con un buen ritmo de trabajo.
+	
+	Durante el segundo Sprint bajamos el ritmo, ya fuese al inicio por acomodarnos un poco al igual que al 
+	final del Sprint por el cambio radical que sufrió el método de trabajo y los espacios usados.
+	
+	El tercer y más conflictivo Sprint tuvo un ritmo soprendentemente similar al primero ya que pudimos 
+	habituarnos a la nueva situación, centar un poco la mirada en el trabajo y trabajar lento pero sin pausa.
+	
+	Aunque al final no logramos completar el 100% de los requisitos opcionales, es cierto que todos los 
+	innegociables están completos y todos aquellos opcionales que nos permitían obtener el mayor valor del producto.
