@@ -8,6 +8,9 @@ Practica 2 Desarrollo Agil - Morado
     3. Product Backlog. Imagen
     4. Componentes del equipo
     5. Sprint 1
+    6. Sprint 2
+    7. Sprint 3
+    8. Métricas
 	
 
 > 1. Descripción del juego
@@ -306,3 +309,64 @@ Practica 2 Desarrollo Agil - Morado
 	Cosas a mejorar:
 		- Conocimientos de las tecnologías empleadas 
 		- Estimación de horas de trabajo
+		
+		
+		
+> 8 Sprint 4, Métricas
+
+	Tabla del proyecto global
+	
+![Tabla del proyecto](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/TablaProyecto.PNG?raw=true "Tabla del proyecto")
+
+	BurnUp del proyecto
+	
+![BurnUp](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/BurnUpProyecto.PNG?raw=true "BurnUp")
+
+	BurnDown del proyecto
+
+![BurnDown](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/BurnDownProyecto.PNG?raw=true "BurnDown")
+
+	Tabla de valores
+	
+![Valores](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/TablaValores.PNG?raw=true "Valores")	
+
+	Velocidad
+
+![Velocidad](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/TablaValores.PNG?raw=true "Velocidad")	
+
+	Tabla de cada Sprint
+	
+![Sprint 1](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Sprint1.PNG?raw=true "Sprint 1")
+
+![Sprint 2](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Sprint2.PNG?raw=true "Sprint 2")
+
+![Sprint 3](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Sprint3.PNG?raw=true "Sprint 3")
+
+	Burn Down Sprint
+
+![Down 1](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Down1.PNG?raw=true "Sprint 1")
+
+![Down 2](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Down2.PNG?raw=true "Sprint 2")
+
+![Down 3](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Down3.PNG?raw=true "Sprint 3")
+
+	Burn Up Sprint
+
+![Up 1](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Up1.PNG?raw=true "Sprint 1")
+
+![Up 2](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Up2.PNG?raw=true "Sprint 2")
+
+![Up 3](https://github.com/DesarrolloAgil-RJAD/practica2-DAgil/blob/master/recursos/Capturas%20GithubProjects/Up3.PNG?raw=true "Sprint 3")
+
+	Enlace de excel drive
+	
+https://docs.google.com/spreadsheets/d/1jVtb6sb9cdWJIus91BilUhNaQMyTPCnZpUNI4_sisuE/edit?usp=sharing
+
+>8.1 Conclusiones obtenidas de las métricas
+	
+	Para sorpresa del equipo, ha sido la primera vez que hemos utilizado Scrum o los tableros Kanban, ha sido una sorpresa agradable para el correcto reparto del trabajo. Así que nos encontramos contentos con la utilización de estas metodologías, nos han permitido tener un reparto correto y una organización sin problema.
+	En nuestro caso, durante el Sprint 1, aunque íbamos algo, "despistados" en el uso de Kanban logramos hacer un tiempo de trabajo adecuado. Una primera toma de contacto que resultó en un Sprint de trabajo sin problema, con un buen ritmo de trabajo.
+	Durante el segundo Sprint bajamos el ritmo, ya fuese al inicio por acomodarnos un poco al igual que al final del Sprint por el cambio radical que sufrió el método de trabajo y los espacios usados.
+	El tercer y más conflictivo Sprint tuvo un ritmo soprendentemente similar al primero ya que pudimos habituarnos a la nueva situación, centar un poco la mirada en el trabajo y trabajar lento pero sin pausa.
+	
+	Aunque al final no logramos completar el 100% de los requisitos opcionales, es cierto que todos los innegociables están completos y todos aquellos opcionales que nos permitían obtener el mayor valor del producto.
